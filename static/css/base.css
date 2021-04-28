@@ -8,7 +8,7 @@ body {
     background: url('/media/home-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #222;
     font-family: 'Raleway';
 }
 
@@ -30,14 +30,14 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #222;
+    color: #fafafa;
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
+.btn-green {
+    background: #15382D;
+    color: #fafafa;
 }
 
 .shop-now-button:hover,
@@ -46,16 +46,14 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #15382D;
+    color: #fafafa;
 }
 
-.text-black {
-    color: #000 !important;
-}
+
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #222 !important;
 }
 
 /* -------------------------------- Media Queries */
