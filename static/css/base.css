@@ -12,11 +12,19 @@ body {
     font-family: 'Raleway';
 }
 
-.navbar-style {
+.delivery-banner {
+    background: #15382D;
+    color: #fafafa;
+    margin: 0px;
+    padding-top: 8px;
+    letter-spacing: 2px;
+}
+
+.header-style {
     background-color: #222;
 }
 
-.navbar-style a {
+.header-style a {
     color: #fafafa;
     text-decoration: none;
     text-transform: uppercase;

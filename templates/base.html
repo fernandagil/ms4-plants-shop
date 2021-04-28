@@ -38,29 +38,38 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row navbar-style pt-lg-2 d-none d-lg-flex">
+
+        <!-- banner -->
+        <div id="delivery-banner" class="row text-center">
+            <div class="col-12 delivery-banner">
+                <h6 >Free delivery on orders over ${{ free_shipping_threshold }}!</h6>                
+            </div>            
+        </div>
+        
+        <!-- header -->
+        <div id="topnav" class="row header-style pt-lg-2 d-none d-lg-flex">
 
             <!-- left side -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-left">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-left align-self-center">
                 <ul class="list-inline list-unstyled text-center my-0">
                     <li class="list-inline-item">
-                        <a href="{% url 'account_login' %}" class="dropdown-item">Shop</a>
+                        <a href="#" class="dropdown-item">Shop</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="{% url 'account_login' %}" class="dropdown-item">Plant Tips</a>
+                        <a href="#" class="dropdown-item">Plant Tips</a>
                     </li>
                 </ul>
             </div>
 
             <!-- logo -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center align-self-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <img src="media/logo.jpg" alt="">
                 </a>
             </div>
 
             <!-- right side -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right align-self-center">
                 <ul class="list-inline list-unstyled text-center my-0">
                     
                     <!-- account -->
