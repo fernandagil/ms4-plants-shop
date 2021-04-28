@@ -134,6 +134,12 @@
                 </ul>
             </div>
         </div>
+
+        <!-- mobile header -->
+        <div id="mobileNav" class="row header-style d-block d-lg-none">
+            {% include 'includes/mobile-top-header.html' %}
+        </div>
+
     </header>
 
     {% if messages %}
@@ -150,12 +156,23 @@
 
         <!-- from w3schools -->
         <script>
+
+            // main-nav menu
             function openNav() {
                 document.getElementById("mySidenav").style.width = "300px";
             }
-            
+
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
+            }
+
+            // mobile-nav menu
+            function openMobileNav() {
+                document.getElementById("myMobileNav").style.width = "100%";
+            }
+
+            function closeMobileNav() {
+                document.getElementById("myMobileNav").style.width = "0";
             }
         </script>
     {% endblock %}
