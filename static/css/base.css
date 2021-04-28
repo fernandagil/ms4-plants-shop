@@ -12,6 +12,16 @@ body {
     font-family: 'Raleway';
 }
 
+.navbar-style {
+    background-color: #222;
+}
+
+.navbar-style a {
+    color: #fafafa;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -25,8 +35,8 @@ body {
     font-family: 'Playfair Display', cursive;
 }
 
-.main-logo-link {
-    width: fit-content;
+.main-logo-link img {
+    max-width: 200px;
 }
 
 .shop-now-button {
@@ -35,22 +45,24 @@ body {
     min-width: 260px;
 }
 
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #15382D;
+    color: #fafafa;
+}
+
 .btn-green {
     background: #15382D;
     color: #fafafa;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #15382D;
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background: #222;
     color: #fafafa;
 }
-
-
 
 .border-black {
     border: 1px solid #222 !important;
