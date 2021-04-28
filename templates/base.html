@@ -47,18 +47,24 @@
         </div>
         
         <!-- header -->
-        <div id="topnav" class="row header-style pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row header-style pt-lg-1 d-none d-lg-flex">
 
             <!-- left side -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-left align-self-center">
-                <ul class="list-inline list-unstyled text-center my-0">
+                <ul class="list-inline list-unstyled text-center">
+
+                    <!-- shop -->
                     <li class="list-inline-item">
-                        <a href="#" class="dropdown-item">Shop</a>
+                        {% include 'includes/main-nav.html' %}
+                        <span onclick="openNav()" class="dropdown-item navbar-item">Shop</span>
                     </li>
+
+                    <!-- blog -->
                     <li class="list-inline-item">
-                        <a href="#" class="dropdown-item">Plant Tips</a>
+                        <a href="#" class="dropdown-item navbar-item">Plant Tips</a>
                     </li>
                 </ul>
+
             </div>
 
             <!-- logo -->
@@ -76,8 +82,8 @@
                     <li class="list-inline-item dropdown">
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <div><i class="fas fa-user fa-lg navbar-item"></i></div>
+                                <p class="my-0 navbar-item">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -102,7 +108,7 @@
                                 <div class="input-group-append">
                                     <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                         <span class="icon">
-                                            <i class="fas fa-search"></i>
+                                            <i class="fas fa-search navbar-item"></i>
                                         </span>
                                     </button>
                                 </div>
@@ -114,8 +120,8 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
+                                <div><i class="fas fa-shopping-bag fa-lg navbar-item"></i></div>
+                                <p class="my-0 navbar-item">
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -141,6 +147,17 @@
     {% endblock %}
 
     {% block postloadjs %}
+        <script>
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
     {% endblock %}
 
 
