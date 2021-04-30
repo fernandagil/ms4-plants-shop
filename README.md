@@ -37,6 +37,17 @@ Another main goal is to provide the users with a blog to keep them informed with
 <span id="1-UX-3"></span>
 ### 1.3 Design Choices
 
+**Fonts**: 
+- The main font Raleway was chosen for being a clear, aesthetic and readable font.
+- The secondary font Playfair Display was used to create the logo for having an elegant feeling.
+
+Both fonts were imported from [Google Fonts](https://fonts.google.com/)
+
+**Colors**:
+To give the project a clean look, the main colors chosen were off-black and off-white, with two shades of blue-green to emphasize some areas like the shop now button.
+
+**Images**:
+
 <span id="1-UX-4"></span>
 ### 1.4 Database Design
 
