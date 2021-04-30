@@ -13,3 +13,21 @@
         <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
     {% endif %}
 </div>
+
+
+<!-- search nav -->
+<div id="mySearchNav" class="sidenav rightnav" aria-labelledby="user-options">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSearchNav()">&times;</a>
+
+    <h6 class="sidenav-text">Search</h6>
+    <form method="GET" action="">
+        <div class="input-group mx-1">
+            <input class="form-control rounded-0" type="text" name="q" placeholder="Find the best plants">
+            <div class="input-group-append">
+                <button class="form-control rounded-0" type="submit">
+                        <i class="fas fa-search search-icon"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

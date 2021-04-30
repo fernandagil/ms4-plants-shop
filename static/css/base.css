@@ -47,6 +47,11 @@ body {
     color: #FAFAFA;
     text-decoration: none;
     cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 0.8rem;
+    width: 0.8rem;
 }
 
 /* --------------------------------------------------------------- SHOP MENU */
@@ -61,7 +66,7 @@ body {
     top: 0;
     background-color: #222;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; 
+    padding: 120px 0px 40px;
     transition: 0.5s;
   }
 
@@ -92,24 +97,30 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-  
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+.sidenav-text {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FAFAFA;
+    display: block;
+    transition: 0.3s;
+}
+
+.search-icon {
+    color: #222;
+    text-decoration: none;
+}
+
+.search-icon:hover,
+.search-icon:active,
+.search-icon:focus {
+    color: #125648;
+    text-decoration: none;
 }
 
 /* ----------------------------------------------------------- MOBILE NAVBAR */
 
-
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1rem;
-    width: 1rem;
-}
 
 .logo-font {
     font-family: 'Playfair Display', cursive;
