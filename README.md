@@ -1,18 +1,19 @@
 # Plantas&co. Shop
 ![Plantas&co. Shop]()
-
+Plantas&co. is a fictitious online shop that sells all kinds of indoor plants, but also dry flowers bouquets. 
+Besides shopping, users of Plantas&co. will find a blog where both beginners and expers can find some useful tips on how to take care of their plants.
 
 ---
 #### CONTENT
 - <a href="#1-UX">1. UX</a>
-  - <a href="#1-UX-1">1.1 Project goals</a>
+  - <a href="#1-UX-1">1.1 Project Goals</a>
   - <a href="#1-UX-2">1.2 User Stories</a>
   - <a href="#1-UX-3">1.3 Design Choices</a>
   - <a href="#1-UX-4">1.4 Database Design</a>
   - <a href="#1-UX-5">1.5 Wireframes</a>
 - <a href="#2-FEAT">2. Features</a>
   - <a href="#2-FEAT-1">2.1 CRUD</a>
-  - <a href="#2-FEAT-1">2.2 Existing features</a>
+  - <a href="#2-FEAT-1">2.2 Existing Features</a>
   - <a href="#2-FEAT-3">2.3 Potential Features</a>
 - <a href="#3-TECH">3. Technologies Used</a>
 - <a href="#4-TEST">4. Testing</a>
@@ -26,6 +27,9 @@
 
 <span id="1-UX-1"></span>
 ### 1.1 Project Goals
+The primary goal of Plantas&co. shop is to provide a clean, intuitive online shop where the user can browse and purchase different types of plants easily. 
+
+Another main goal is to provide the users with a blog to keep them informed with advice to take care of their plants at home.
 
 <span id="1-UX-2"></span>
 ### 1.2 User Stories
