@@ -1,45 +1,92 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Plantas&co. Shop
+![Plantas&co. Shop]()
 
-Welcome fernandagil,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+---
+#### CONTENT
+- <a href="#1-UX">1. UX</a>
+  - <a href="#1-UX-1">1.1 Project goals</a>
+  - <a href="#1-UX-2">1.2 User Stories</a>
+  - <a href="#1-UX-3">1.3 Design Choices</a>
+  - <a href="#1-UX-4">1.4 Database Design</a>
+  - <a href="#1-UX-5">1.5 Wireframes</a>
+- <a href="#2-FEAT">2. Features</a>
+  - <a href="#2-FEAT-1">2.1 CRUD</a>
+  - <a href="#2-FEAT-1">2.2 Existing features</a>
+  - <a href="#2-FEAT-3">2.3 Potential Features</a>
+- <a href="#3-TECH">3. Technologies Used</a>
+- <a href="#4-TEST">4. Testing</a>
+- <a href="#5-DEPL">5. Deployment</a>
+- <a href="#6-CRED">6. Credits</a>
 
-## Gitpod Reminders
+---
+ 
+<span id="1-UX"></span>
+## 1. UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<span id="1-UX-1"></span>
+### 1.1 Project Goals
 
-`python3 -m http.server`
+<span id="1-UX-2"></span>
+### 1.2 User Stories
 
-A blue button should appear to click: _Make Public_,
+<span id="1-UX-3"></span>
+### 1.3 Design Choices
 
-Another blue button should appear to click: _Open Browser_.
+<span id="1-UX-4"></span>
+### 1.4 Database Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<span id="1-UX-5"></span>
+### 1.5 Wireframes
 
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
 ---
 
-Happy coding!
+<span id="2-FEAT"></span>
+## 2. Features
+
+<span id="2-FEAT-1"></span>
+### 2.1 CRUD functionality
+
+<span id="2-FEAT-2"></span>
+### 2.2 Existing Features
+ 
+<span id="2-FEAT-3"></span>
+### 2.3 Potential Features
+
+
+---
+
+<span id="3-TECH"></span>
+## 3. Technologies Used
+
+---
+ 
+<span id="4-TEST"></span>
+## 4. Testing
+
+ 
+---
+ 
+<span id="5-DEPL"></span>
+## 5. Deployment
+ 
+### 5.1 Heroku deployment
+
+### 5.2 Running This Project Locally
+
+
+---
+ 
+<span id="6-CRED"></span>
+## 6. Credits
+ 
+### 6.1 Code
+
+- The code to create the side navbar menu functionality is from [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp)
+
+### 6.2 Content
+
+### 6.3 Media
+
+### 6.4 Acknowledgments
