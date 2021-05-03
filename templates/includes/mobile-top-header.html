@@ -13,10 +13,10 @@
             <li class="list-inline-item mobile-el">
                 <h4><a href="#" class="mobile-el"><i class="fab fa-pagelines"></i>SHOP</a></h4>
                 <a href="{% url 'products' %}" class="mobile-el"><small>ALL PRODUCTS</small></a>
-                <a href="#" class="mobile-el"><small>INDOOR PLANTS</small></a>
-                <a href="#" class="mobile-el"><small>CACTI</small></a>
-                <a href="#" class="mobile-el"><small>DRY FLOWERS</small></a>
-                <a href="#" class="mobile-el"><small>SPECIAL OFFERS</small></a>
+                <a href="{% url 'products' %}?category=indoor" class="mobile-el"><small>INDOOR PLANTS</small></a>
+                <a href="{% url 'products' %}?category=cacti" class="mobile-el"><small>CACTI</small></a>
+                <a href="{% url 'products' %}?category=flowers" class="mobile-el"><small>DRY FLOWERS</small></a>
+                <a href="{% url 'products' %}?category=deals" class="mobile-el"><small>SPECIAL OFFERS</small></a>
             </li>
 
             <!-- blog -->
