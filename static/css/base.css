@@ -202,6 +202,22 @@ body {
     border: 1px solid #222 !important;
 }
 
+/* ------------------------------------------------------------ PRODUCTS PAGE */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #FAFAFA;
+}
+
+.card {
+    border-radius: 0;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
