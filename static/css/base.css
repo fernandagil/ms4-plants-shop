@@ -7,7 +7,6 @@ html {
 body {
     background: url('/media/home-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
     color: #222;
     font-family: 'Raleway';
 }
@@ -202,6 +201,16 @@ body {
     border: 1px solid #222 !important;
 }
 
+/* ---------------------------------------------------------------- HOME PAGE */
+
+.home-page-container {
+    margin-top: 170px;
+}
+
+.main-container {
+    margin-top: 150px;
+}
+
 /* ------------------------------------------------------------ PRODUCTS PAGE */
 
 .overlay {
@@ -233,12 +242,10 @@ body {
         max-width: 120px;
     }
 
-    /* .sidenav a {
-        padding: 2px;
-    } */
     .sidenav {
         padding: 40px 0px 20px;
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -262,7 +269,13 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .home-page-container {
+        margin-top: 40px;
+    }
+    
+    .main-container {
+        margin-top: 30px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
