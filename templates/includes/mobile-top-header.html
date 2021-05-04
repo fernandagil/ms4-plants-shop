@@ -71,13 +71,11 @@
     </a>
 </div>
 
-<!-- account and basket -->
+<!-- basket -->
 <div class="col-4 my-auto py-1 text-center align-self-center">
     <ul class="list-inline list-unstyled text-center my-0">
-
-        <!-- basket -->
         <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-bag fa-lg navbar-item"></i></div>
                     <p class="my-0 navbar-item">
