@@ -237,12 +237,22 @@ body {
 
 .card {
     border-radius: 0;
-    background: #222;
+    background: #6B9286;
     color: #FAFAFA;
 }
 
 .card img {
     border-radius: 0;
+}
+
+.card-footer {
+    border-top: 0;
+}
+
+.card-footer p {
+    padding-bottom: .75rem;
+    font-family: 'Playfair Display', cursive;
+    letter-spacing: 1px;
 }
 
 a.category-badge > span.badge {
