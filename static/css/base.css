@@ -245,6 +245,15 @@ body {
     border-radius: 0;
 }
 
+a.category-badge > span.badge {
+    background: #222 !important;
+    color: #FAFAFA !important;
+}
+
+a.category-badge > span.badge:hover {
+    background: #125648 !important;
+}
+
 
 /* -------------------------------- Media Queries */
 
