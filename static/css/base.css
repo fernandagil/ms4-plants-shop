@@ -11,6 +11,49 @@ body {
     font-family: 'Raleway';
 }
 
+/* ----------------------------------------------------------------- BUTTONS */
+
+.shop-now-btn {
+    background: #222;
+    color: #fafafa;
+    min-width: 260px;
+}
+
+.shop-now-btn:hover,
+.shop-now-btn:active,
+.shop-now-btn:focus {
+    background: #125648;
+    color: #fafafa;
+}
+
+.btn-green {
+    background: #125648;
+    color: #fafafa;
+}
+
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background: #222;
+    color: #fafafa;
+}
+
+.back-top-btn {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #FAFAFA77;
+}
+
+.back-top-btn:hover,
+.back-top-btn:active,
+.back-top-btn:focus {
+    background: #12564877;
+    color: #FAFAFA;
+}
+
 /* ------------------------------------------------------------------ BANNER */
 
 .delivery-banner {
@@ -94,7 +137,7 @@ body {
 }
 
 .sidenav .closebtn,
-.mobilena .closebtn {
+.mobilenav .closebtn {
     position: absolute;
     top: 0;
     font-size: 36px;
@@ -172,31 +215,6 @@ body {
     max-width: 200px;
 }
 
-.shop-now-button {
-    background: #222;
-    color: #fafafa;
-    min-width: 260px;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus {
-    background: #125648;
-    color: #fafafa;
-}
-
-.btn-green {
-    background: #125648;
-    color: #fafafa;
-}
-
-.btn-green:hover,
-.btn-green:active,
-.btn-green:focus {
-    background: #222;
-    color: #fafafa;
-}
-
 .border-black {
     border: 1px solid #222 !important;
 }
@@ -268,21 +286,7 @@ a.category-link:focus {
 
 }
 
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background: #FAFAFA77;
-}
-
-.btt-button:hover {
-    background: #12564877;
-    color: #FAFAFA;
-}
-
-.btt-link {
+.back-top-link {
     cursor: pointer;
 }
 
