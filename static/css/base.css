@@ -255,13 +255,17 @@ body {
     letter-spacing: 1px;
 }
 
-a.category-badge > span.badge {
-    background: #222 !important;
-    color: #FAFAFA !important;
+a.category-link {
+    color: #222;
+    text-decoration: none;
 }
 
-a.category-badge > span.badge:hover {
-    background: #125648 !important;
+a.category-link:hover,
+a.category-link:active,
+a.category-link:focus {
+    color: #125648;
+    text-decoration: none;
+
 }
 
 .btt-button {
