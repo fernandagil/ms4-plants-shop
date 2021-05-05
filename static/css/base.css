@@ -38,6 +38,18 @@ body {
     color: #fafafa;
 }
 
+.btn-grey {
+    background: #22222277;
+    color: #FAFAFA;
+}
+
+.btn-grey:hover,
+.btn-grey:active,
+.btn-grey:focus {
+    background: #125648;
+    color: #FAFAFA;
+}
+
 .back-top-btn {
     height: 42px;
     width: 42px;
