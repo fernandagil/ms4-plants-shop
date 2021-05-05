@@ -11,6 +11,10 @@ body {
     font-family: 'Raleway';
 }
 
+.text-green {
+    color: #125648 !important;
+}
+
 /* ----------------------------------------------------------------- BUTTONS */
 
 .shop-now-btn {
@@ -66,6 +70,23 @@ body {
     color: #FAFAFA;
 }
 
+.increment-qty,
+.decrement-qty {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.update-link,
+.remove-item {
+    font-size: 0.8rem;
+}
+
+.update-link:hover,
+.remove-item:hover {
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
 /* ------------------------------------------------------------------ BANNER */
 
 .delivery-banner {
@@ -115,7 +136,6 @@ body {
 /* --------------------------------------------------------------- SHOP MENU */
 /* from w3schools */
 
-/* Side navigation menu */
 .sidenav {
     height: 100%; 
     width: 0;
