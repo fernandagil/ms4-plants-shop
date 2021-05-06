@@ -34,6 +34,41 @@ Another main goal is to provide the users with a blog to keep them informed with
 <span id="1-UX-2"></span>
 ### 1.2 User Stories
 
+##### Viewing and Navigation
+- As a shopper, I want to be able to view a list of products so that I can select some to purchase
+- As a shopper, I want to be able to view individual product details so that I can identify the price, description and product image
+- As a shopper, I want to be able to quickly identify special offers so that I can take advantage of special savings on products I'd like to purchase
+- As a shopper, I want to be able to easily view the total of my purchases at anytime so that I can avoid spending too much
+
+##### Registration and User Account
+- As a site user, I want to be able to easily register for an account so that I can have a personal account and be able to view my profile
+- As a site user, I want to be able to easily login or logout so that I can access my personal account information
+- As a site user, I want to be able to easily recover my password in case I forget it so that I can recover access to my account
+- As a site user, I want to be able to receive an email confirmation after registering so that I can verify that my account registration was successful
+- As a site user, I want to be able to have a personalized user profile so that I can view my personal order history and order confirmation, save my payment information and see the products I saved in my favourites listx
+
+##### Sorting and Searching
+- As a shopper, I want to be able to sort the list of available products so that I can easily identify the best priced and categorically sorted products
+- As a shopper, I want to be able to sort a specific category of product so that I can find the best-priced product in a specific category, or sort the products in that category by name
+- As a shopper, I want to be able to sort multiple categories of products simultaneously so that I can find the best-priced products across broad categories, such as "indoor plants" or "dry flowers"
+- As a shopper, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase
+- As a shopper, I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available
+
+##### Purchasing and Checkout
+- As a shopper, I want to be able to easily select the quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product or quantity
+- As a shopper, I want to be able to view items in  my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive
+- As a shopper, I want to be able to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout
+- As a shopper, I want to be able to easily enter my payment information so that I can check out quickly and with no hassles
+- As a shopper, I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase
+- As a shopper, I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes
+- As a shopper, I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records
+
+##### Admin and Store Management
+- As a shopper, I want to be able to add a product so that I can add new items to my store
+- As a shopper, I want to be able to edit/update a product so that I can change product prices, descriptions, images and other product criteria
+- As a shopper, I want to be able to delete a product so that I can remove items that are no longer for sale
+
+
 <span id="1-UX-3"></span>
 ### 1.3 Design Choices
 
