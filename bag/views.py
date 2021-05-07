@@ -60,7 +60,7 @@ def remove_from_bag(request, item_id):
     try:
         product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
-        
+
         bag.pop(item_id)
         messages.success(request, f'Removed {product.name} from your bag')
 

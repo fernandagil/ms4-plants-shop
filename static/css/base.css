@@ -335,7 +335,9 @@ a.category-link:focus {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 100;
+    z-index: 10000;
+    background: #6B9286;
+    color: #fafafa;
 }
 
 .custom-toast {
