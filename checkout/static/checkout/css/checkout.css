@@ -3,10 +3,9 @@
   box-sizing: border-box;
   height: 40px;
   padding: 10px 12px;
-  border: 1px solid transparent;
+  border: 0;
   border-radius: 0px;
-  background-color: #3982e0dc;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
+  background-color: transparent;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
 }
@@ -33,5 +32,5 @@
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
