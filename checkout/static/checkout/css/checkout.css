@@ -22,7 +22,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+    color: #125648CC;
 }
 
 .fieldset-label {
@@ -32,8 +32,18 @@
 
 #payment-form .form-control,
 #card-element {
-    color: #000;
-    border-bottom: 1px solid #000;
+    color: #222;
+    border-bottom: 1px solid #222;
+}
+
+select,
+select option {
+    color: #222;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #125648CC !important;
 }
 
 /* --------------------------------------------------------- LOADING OVERLAY */
