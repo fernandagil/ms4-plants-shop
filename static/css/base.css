@@ -152,6 +152,13 @@ body {
     width: 0.8rem;
 }
 
+.navbar-icon:hover,
+.navbar-icon:active,
+.navbar-icon:focus {
+    color: #222;
+    background-color: #FAFAFA;
+}
+
 .nav-link {
     padding: 0.5rem 0;
 }
