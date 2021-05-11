@@ -65,3 +65,10 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+/* ------------------------------------------------------ ORDER CONFIRMATION */
+.order-confirmation-wrapper {
+    background: #FAFAFA;
+    color: #222;
+    padding: 20px 10px;
+}
