@@ -15,12 +15,17 @@ body {
     color: #125648 !important;
 }
 
+.form-control {
+    border-radius: 0;
+}
+
 /* ----------------------------------------------------------------- BUTTONS */
 
 .shop-now-btn {
     background: #222;
     color: #fafafa;
     min-width: 260px;
+    border-radius: 0;
 }
 
 .shop-now-btn:hover,
@@ -33,6 +38,7 @@ body {
 .btn-green {
     background: #125648;
     color: #fafafa;
+    border-radius: 0;
 }
 
 .btn-green:hover,
@@ -45,6 +51,7 @@ body {
 .btn-grey {
     background: #22222277;
     color: #FAFAFA;
+    border-radius: 0;
 }
 
 .btn-grey:hover,
@@ -54,6 +61,21 @@ body {
     color: #FAFAFA;
 }
 
+.btn-white {
+    background: #FAFAFA;
+    color: #222;
+    border-radius: 0;
+    border: 1px solid #222;
+}
+
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
+    background: #125648;
+    color: #FAFAFA;
+    border: 1px solid #125648;
+}
+
 .back-top-btn {
     height: 42px;
     width: 42px;
@@ -61,6 +83,7 @@ body {
     bottom: 10px;
     right: 10px;
     background: #FAFAFA77;
+    border-radius: 0;
 }
 
 .back-top-btn:hover,
@@ -262,6 +285,18 @@ body {
     background: #FAFAFA !important;
 }
 
+.header-container {
+    padding-top: 164px;
+    background: #FAFAFA;
+}
+
+.dark-container {
+    background: #222222BB;
+    border-radius: 0;
+    color: #FAFAFA;
+}
+
+
 /* ------------------------------------------------------------ PRODUCTS PAGE */
 
 .overlay {
@@ -274,13 +309,14 @@ body {
     z-index: -1;
 }
 
-.overlay-dark {
+.overlay-shelf {
 	height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
-	position: fixed;
-	background: #22222277;
+    position: fixed;
+    background: url('/media/profile.jpg') no-repeat center center fixed;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -369,6 +405,7 @@ a.category-link:focus {
 .account-container {
     background: url('/media/profile.jpg') no-repeat center center fixed;
     background-size: cover;
+    padding-top: 164px;
 }
 
 /* -------------------------------- Media Queries */
