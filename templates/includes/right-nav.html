@@ -6,7 +6,7 @@
         {% if request.user.is_superuser %}
             <a href="#">Product Management</a>
         {% endif %}
-        <a href="#">My Profile</a>
+        <a href="{% url 'profile' %}">My Profile</a>
         <a href="{% url 'account_logout' %}">Logout</a>
     {% else %}
         <a href="{% url 'account_signup' %}">Register</a>

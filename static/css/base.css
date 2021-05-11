@@ -294,7 +294,7 @@ body {
     background: #222222BB;
     border-radius: 0;
     color: #FAFAFA;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 
@@ -316,7 +316,7 @@ body {
 	top: 0;
 	left: 0;
     position: fixed;
-    background: url('/media/profile.jpg') no-repeat center center fixed;
+    background: url('/media/shelf.jpg') no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
 }
@@ -328,6 +328,17 @@ body {
 	left: 0;
 	position: fixed;
     background: url('/media/wall.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.overlay-profile {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+    position: fixed;
+    background: url('/media/profile.jpg') no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
 }
