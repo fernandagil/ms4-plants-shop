@@ -25,6 +25,13 @@
                         </a>
                     {% endif %}
                 </div>
+
+                {% if request.user.is_superuser %}
+                    <div class="edit-delete-btn">
+                        <a class="btn btn-grey float-left" href="{% url 'edit_product' product.id %}"><small>Edit</small></a>
+                        <a class="btn btn-grey float-left" href="{% url 'delete_product' product.id %}"><small>Delete</small></a>
+                    </div>
+                {% endif %}
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">

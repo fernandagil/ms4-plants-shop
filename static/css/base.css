@@ -110,6 +110,16 @@ body {
     cursor: pointer;
 }
 
+.edit-delete-btn {
+    padding: 0.25rem;
+}
+
+.edit-delete-btn a {
+    padding: 1px 5px;
+    width: 70px;
+    margin: 0 3px;
+}
+
 /* ------------------------------------------------------------------ BANNER */
 
 .delivery-banner {
