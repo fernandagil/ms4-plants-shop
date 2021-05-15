@@ -510,6 +510,38 @@ a.category-link:focus {
     border-radius: 0;
 }
 
+/* --------------------------------------------------------------- BLOG PAGE */
+.card-post {
+    border-radius: 0;
+    height: 80%;
+    position: relative;
+    text-align: center;
+}
+
+.post-info {
+    background: #222222CC;
+    color: #FAFAFA;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.post-title {
+    font-size: 1.2rem;
+}
+
+.post-subtitle {
+    margin-top: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Extra small devices (phones, 600px and down) */

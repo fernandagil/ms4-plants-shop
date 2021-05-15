@@ -25,7 +25,7 @@
                 <div class="row">
                     {% for post in blog %}
                         <div class="col-12 col-md-6 mb-5 card-group">
-                            <div class="card card-post">
+                            <div class="card">
                                 {% if request.user.is_superuser %}
                                     <div class="card-header edit-delete-btn">
                                         <a class="btn btn-grey float-left" href="#"><small>Edit</small></a>
@@ -33,15 +33,16 @@
                                     </div>
                                 {% endif %}
                                 
-                                <a href="{% url 'blog_post' post.id %}">
+                                <a href="{% url 'blog_post' post.id %}" class="card-post">
                                     {% if post.main_image %}
                                         <img class="card-img-top img-fluid" src="{{ post.main_image.url }}" alt="{{ post.title }}">
                                     {% else %}
                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                                     {% endif %}
-                                        <div class="post-info">
+                                        <div class="post-info centered">
                                             <p class="post-title">{{ post.title }}</p>
-                                            <p class="post-subtitle"><small> by {{ post.author }} · {{ post.date_created }}</small></p>
+                                            <p class="post-subtitle"><small> by {{ post.author }} <br>
+                                                {{ post.date_created }}</small></p>
                                         </div>
                                 </a>
                             </div>
