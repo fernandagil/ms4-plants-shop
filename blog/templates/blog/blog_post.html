@@ -24,26 +24,26 @@
                 {% endif %}
 
                 <!-- post header -->
-                <h2 class="post-title text-center my-4">{{ blog.title }}</h2>
+                <h2 class="post-main-title text-center my-5">{{ blog.title }}</h2>
                 <hr>
-                <p class="post-subtitle text-center"><small> by {{ blog.author }} · · · {{ blog.date_created }}</small></p>
+                <p class="post-main-subtitle text-center"><small> by {{ blog.author }} · · · {{ blog.date_created }}</small></p>
                 <hr>
 
 
                 <!-- post image -->
-                <div class="image-container my-2">
+                <div class="image-container my-4">
                     {% if blog.main_image %}
-                        <img class="card-img-top img-fluid" src="{{ blog.main_image.url }}" alt="{{ blog.title }}">
+                        <img class="img-fluid" src="{{ blog.main_image.url }}" alt="{{ blog.title }}">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.title }}">
+                        <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.title }}">
                     {% endif %}
                 </div>
 
                 <!-- post main content -->
-                <p class="text-center">{{ blog.text }}</p>
+                <p class="post-text">{{ blog.text }}</p>
 
                 <!-- back to blog page -->
-                <a href="{% url 'products' %}" class="btn my-5 btn-grey">	
+                <a href="{% url 'blog' %}" class="btn my-5 btn-grey">	
                     <span class="icon">	
                         <i class="fas fa-chevron-left"></i>	
                     </span>	
