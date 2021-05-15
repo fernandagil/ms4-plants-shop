@@ -133,11 +133,17 @@ To give the project a clean look, the main colors chosen were off-black and off-
  
 ### 6.1 Code
 
+- This project was developed following the Boutique Ado project tutorial from [Code Institute](https://codeinstitute.net/). The code was adapted to fit the purpose of this project.
 - The code to create the side navbar menu functionality is from [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 - The code to style the blog posts is from [W3Schools](https://www.w3schools.com/howto/howto_css_image_text.asp)
 
 ### 6.2 Content
 
+- The posts in the blog app are originally from this article in [modsy.com](https://blog.modsy.com/home-design-tips-guides/tips-guides/indoor-plants-care/)
+
 ### 6.3 Media
+
+- The images used for the main page, blog and background belong to [Ceyda Çiftci](https://unsplash.com/@ceydaciftci) in [Unsplash](https://unsplash.com/)
+- The images used as product images belong to [Severin Candrian](https://unsplash.com/@feeypflanzen) in [Unsplash](https://unsplash.com/)
 
 ### 6.4 Acknowledgments
