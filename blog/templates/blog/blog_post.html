@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                
+                <!-- edit/delete button -->
+                {% if request.user.is_superuser %}
+                    <div class="card-header edit-delete-btn float right">
+                        <a class="btn btn-grey" href="#"><small>Edit</small></a>
+                        <a class="btn btn-grey" href="#"><small>Delete</small></a>
+                    </div>
+                {% endif %}
+
+                <!-- post header -->
+                <h2 class="post-title text-center my-4">{{ blog.title }}</h2>
+                <hr>
+                <p class="post-subtitle text-center"><small> by {{ blog.author }} · · · {{ blog.date_created }}</small></p>
+                <hr>
+
+
+                <!-- post image -->
+                <div class="image-container my-2">
+                    {% if blog.main_image %}
+                        <img class="card-img-top img-fluid" src="{{ blog.main_image.url }}" alt="{{ blog.title }}">
+                    {% else %}
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.title }}">
+                    {% endif %}
+                </div>
+
+                <!-- post main content -->
+                <p class="text-center">{{ blog.text }}</p>
+
+                <!-- back to blog page -->
+                <a href="{% url 'products' %}" class="btn my-5 btn-grey">	
+                    <span class="icon">	
+                        <i class="fas fa-chevron-left"></i>	
+                    </span>	
+                    <span class="text-uppercase">Back to blog</span>	
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}

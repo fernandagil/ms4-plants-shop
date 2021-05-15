@@ -33,11 +33,11 @@
                                     </div>
                                 {% endif %}
                                 
-                                <a href="#">
+                                <a href="{% url 'blog_post' post.id %}">
                                     {% if post.main_image %}
-                                        <img class="card-img-top img-fluid" src="{{ post.main_image.url }}" alt="{{ blog.title }}">
+                                        <img class="card-img-top img-fluid" src="{{ post.main_image.url }}" alt="{{ post.title }}">
                                     {% else %}
-                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.title }}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                                     {% endif %}
                                         <div class="post-info">
                                             <p class="post-title">{{ post.title }}</p>
