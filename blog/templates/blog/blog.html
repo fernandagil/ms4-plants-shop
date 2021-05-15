@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay-wall"></div>
+    <div class="container main-container">
+        <div class="row">
+            <div class="cold-12 col-md-8 offset-md-2 text-center">
+                <h2 class="logo-font">Plants Tips - Blog</h2>
+                <hr class="w-80 mb-5">
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-12 col-md-8 offset-md-2">
+
+                <!-- blog posts -->
+                <div class="row">
+                    {% for post in blog %}
+                        <div class="col-12 col-md-6 mb-5 card-group">
+                            <div class="card card-post">
+                                {% if request.user.is_superuser %}
+                                    <div class="card-header edit-delete-btn">
+                                        <a class="btn btn-grey float-left" href="#"><small>Edit</small></a>
+                                        <a class="btn btn-grey float-right" href="#"><small>Delete</small></a>
+                                    </div>
+                                {% endif %}
+                                
+                                <a href="#">
+                                    {% if post.main_image %}
+                                        <img class="card-img-top img-fluid" src="{{ post.main_image.url }}" alt="{{ blog.title }}">
+                                    {% else %}
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.title }}">
+                                    {% endif %}
+                                        <div class="post-info">
+                                            <p class="post-title">{{ post.title }}</p>
+                                            <p class="post-subtitle"><small> by {{ post.author }} · {{ post.date_created }}</small></p>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5"></div>
+                        {% endif %}                        
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5"></div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- back to top button -->
+    <div class="back-top-btn shadow-sm">
+        <a class="back-top-link d-flex h-100">
+            <i class="fas fa-arrow-up mx-auto my-auto"></i>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+    <!-- back to top button functionality -->
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+{% endblock %}
