@@ -111,13 +111,25 @@ body {
 }
 
 .edit-delete-btn {
-    padding: 0.25rem;
+    padding: 0;
+    float: right;
+    background: #222;
+    border: 0;
 }
 
 .edit-delete-btn a {
-    padding: 1px 5px;
+    padding: 0;
     width: 70px;
-    margin: 0 3px;
+    margin: 0;
+    background: #22222277;
+    color: #FAFAFA;
+}
+
+.edit-delete-btn a:hover,
+.edit-delete-btn a:active,
+.edit-delete-btn a:focus {
+    background: #FAFAFA;
+    color: #222;
 }
 
 /* ------------------------------------------------------------------ BANNER */
@@ -362,8 +374,8 @@ body {
 
 .card {
     border-radius: 0;
-    background: #ABC3B9;
-    color: #FAFAFA;
+    background: #FAFAFA;
+    color: #222;
 }
 
 .card img {

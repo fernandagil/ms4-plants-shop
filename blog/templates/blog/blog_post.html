@@ -17,9 +17,9 @@
                 
                 <!-- edit/delete button -->
                 {% if request.user.is_superuser %}
-                    <div class="card-header edit-delete-btn float right">
-                        <a class="btn btn-grey" href="#"><small>Edit</small></a>
-                        <a class="btn btn-grey" href="#"><small>Delete</small></a>
+                    <div class="edit-delete-btn">
+                        <a class="btn" href="#"><small>Edit</small></a>
+                        <a class="btn" href="#"><small>Delete</small></a>
                     </div>
                 {% endif %}
 
