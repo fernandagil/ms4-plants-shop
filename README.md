@@ -134,6 +134,7 @@ To give the project a clean look, the main colors chosen were off-black and off-
 ### 6.1 Code
 
 - The code to create the side navbar menu functionality is from [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp)
+- The code to style the blog posts is from [W3Schools](https://www.w3schools.com/howto/howto_css_image_text.asp)
 
 ### 6.2 Content
 
