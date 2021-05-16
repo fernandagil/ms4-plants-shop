@@ -115,6 +115,11 @@ To give the project a clean look, the main colors chosen were off-black and off-
 <span id="4-TEST"></span>
 ## 4. Testing
 
+BUGS
+
+- NoReverseMatch - When creating the edit blog functionality, a NoReverseMatch error was showing when attempting to go to the main blog page. 
+    - Because I was using the same url in both the main blog page and the individual post page, I didn't realize that in the main blog page, the edit button was inside a for loop where the object was called 'post' and not 'blog' like it was called in the views.py file, so I just had to change 'blog' for 'post' and it worked properly.
+
  
 ---
  
