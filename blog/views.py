@@ -27,10 +27,10 @@ def blog_post(request, blog_id):
     return render(request, 'blog/blog_post.html', context)
 
 
-def add_blog(request):
+def add_post(request):
     """ Add a post to the blog """
     form = BlogForm()
-    template = 'blog/add_blog.html'
+    template = 'blog/add_post.html'
     context = {
         'form': form,
     }
