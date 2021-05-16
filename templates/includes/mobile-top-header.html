@@ -1,8 +1,8 @@
 <!-- menu -->
-<div class="col-4 my-auto py-1 text-center align-self-center">
-    <span onclick="openMobileNav()"  class="dropdown-item navbar-item">Menu</span>
+<div class="col-4 my-auto py-1 float-left">
+    <span onclick="openMobileNav()" class="dropdown-item text-left"><i class="fas fa-bars fa-lg navbar-item"></i></span>
 
-    <div id="myMobileNav" class="mobilenav">
+    <div id="myMobileNav" class="mobilenav text-center">
         <ul>
             <!-- close button -->
             <li class="list-inline-item mobile-el">
@@ -50,7 +50,7 @@
             <li class="list-inline-item mobile-el">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-80 text-center">
-                        <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border rounded-0 text-center" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn" type="submit">
                                 <span class="icon">
@@ -73,8 +73,8 @@
 </div>
 
 <!-- basket -->
-<div class="col-4 my-auto py-1 text-center align-self-center">
-    <ul class="list-inline list-unstyled text-center my-0">
+<div class="col-4 my-auto py-1 float-right">
+    <ul class="list-inline list-unstyled text-right my-0">
         <li class="list-inline-item">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                 <div class="text-center">
