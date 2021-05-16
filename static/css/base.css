@@ -315,7 +315,7 @@ body {
 }
 
 .header-container {
-    padding-top: 164px;
+    padding-top: 10px;
     background: #FAFAFA;
 }
 
@@ -590,7 +590,6 @@ a.category-link:focus {
     .main-logo-link img {
         max-width: 120px;
     }
-
     .sidenav {
         padding: 40px 0px 20px;
     }
@@ -602,7 +601,6 @@ a.category-link:focus {
     .main-logo-link img {
         max-width: 150px;
     }
-
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -610,10 +608,8 @@ a.category-link:focus {
         left: 0;
         z-index: 5;
     }
-
     .header-container {
-        padding-top: 164px;
-        background: #FAFAFA;
+        padding-top: 50px;
     }
 }
 
@@ -622,9 +618,11 @@ a.category-link:focus {
     .home-page-container {
         padding-top: 40px;
     }
-    
     .main-container {
         padding-top: 30px;
+    }
+    .header-container {
+        padding-top: 100px;
     }
 }
 
