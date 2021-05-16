@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Blog
 from .forms import BlogForm
 
@@ -28,8 +29,13 @@ def blog_post(request, blog_id):
     return render(request, 'blog/blog_post.html', context)
 
 
+@login_required
 def add_post(request):
     """ Add a post to the blog """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES)
         if form.is_valid():
@@ -49,8 +55,13 @@ def add_post(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_post(request, blog_id):
     """ Edit a blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     blog = get_object_or_404(Blog, pk=blog_id)
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES, instance=blog)
@@ -73,8 +84,13 @@ def edit_post(request, blog_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_post(request, blog_id):
     """ Delete a post from the blog """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     blog = get_object_or_404(Blog, pk=blog_id)
     blog.delete()
     messages.success(request, 'Blog post deleted!')
