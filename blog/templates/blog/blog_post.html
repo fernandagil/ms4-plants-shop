@@ -19,7 +19,7 @@
                 {% if request.user.is_superuser %}
                     <div class="edit-delete-btn">
                         <a class="btn btn-grey" href="{% url 'edit_post' blog.id %}"><small>Edit</small></a>
-                        <a class="btn btn-grey" href="#"><small>Delete</small></a>
+                        <a class="btn btn-grey" href="{% url 'delete_post' blog.id %}"><small>Delete</small></a>
                     </div>
                 {% endif %}
 
