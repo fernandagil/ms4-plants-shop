@@ -34,7 +34,8 @@
                 <div class=" mobile-el" aria-labelledby="user-options">
                     {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="mobile-el"><small>Product Management</small></a>
+                            <a href="{% url 'add_product' %}" class="mobile-el"><small>Product Management - Add Product</small></a>
+                            <a href="{% url 'add_post' %}" class="mobile-el"><small>Product Management - Add Blog Post</small></a>
                         {% endif %}
                         <a href="{% url 'profile' %}" class="mobile-el"><small>My Profile</small></a>
                         <a href="{% url 'account_logout' %}" class="mobile-el"><small>Logout</small></a>
