@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
+from .forms import BlogForm
 
 
 def all_blog(request):
@@ -24,3 +25,14 @@ def blog_post(request, blog_id):
     }
 
     return render(request, 'blog/blog_post.html', context)
+
+
+def add_blog(request):
+    """ Add a post to the blog """
+    form = BlogForm()
+    template = 'blog/add_blog.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
