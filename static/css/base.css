@@ -634,6 +634,10 @@ a.category-link:focus {
     .dropdown-item {
         padding: .25rem;
     }
+    .edit-delete-btn a {
+        width: 50px;
+        font-size: 0.7rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

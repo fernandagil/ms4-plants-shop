@@ -57,6 +57,8 @@
                     {% for product in products %}
                         <div class="col-6 col-md-4 col-lg-3 card-group mb-3">
                             <div class="card h-80 border-0">
+
+                                <!-- edit/delete buttons -->
                                 {% if request.user.is_superuser %}
                                     <div class="card-header edit-delete-btn">
                                         <a class="btn btn-grey float-left" href="{% url 'edit_product' product.id %}"><small>Edit</small></a>
