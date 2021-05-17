@@ -10,32 +10,34 @@
             </li>
 
             <!-- shop -->
-            <li class="list-inline-item mobile-el">
-                <h4><a href="#" class="mobile-el"><i class="fab fa-pagelines"></i>SHOP</a></h4>
-                <a href="{% url 'products' %}" class="mobile-el"><small>ALL PRODUCTS</small></a>
-                <a href="{% url 'products' %}?category=indoor" class="mobile-el"><small>INDOOR PLANTS</small></a>
-                <a href="{% url 'products' %}?category=cacti" class="mobile-el"><small>CACTI</small></a>
-                <a href="{% url 'products' %}?category=flowers" class="mobile-el"><small>DRY FLOWERS</small></a>
-                <a href="{% url 'products' %}?category=deals" class="mobile-el"><small>SPECIAL OFFERS</small></a>
+            <li class="list-inline-item mobile-el my-3">
+                <a class="mobile-el" data-toggle="collapse" href="#collapseShop" aria-expanded="false" aria-controls="collapseShop">
+                    <h3><i class="fab fa-pagelines"></i>SHOP</h3>
+                </a>
+                <div class="collapse mb-3" id="collapseShop">
+                    <a href="{% url 'products' %}" class="mobile-el"><small>ALL PRODUCTS</small></a>
+                    <a href="{% url 'products' %}?category=indoor" class="mobile-el"><small>Indoor Plants</small></a>
+                    <a href="{% url 'products' %}?category=cacti" class="mobile-el"><small>Cacti</small></a>
+                    <a href="{% url 'products' %}?category=flowers" class="mobile-el"><small>Dry Flowers</small></a>
+                    <a href="{% url 'products' %}?category=deals" class="mobile-el"><small>Special Offers</small></a>
+                </div>
             </li>
 
             <!-- blog -->
-            <li class="list-inline-item mobile-el">
-                <h4><a href="{% url 'blog' %}" class="mobile-el"><i class="fas fa-info"></i>PLANT TIPS</a></h4>
+            <li class="list-inline-item mobile-el my-3">
+                <h3><a href="{% url 'blog' %}" class="mobile-el"><i class="fas fa-info"></i>PLANT TIPS</a></h3>
             </li>
 
             <!-- account -->
-            <li class="list-inline-item mobile-el">
-                <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div>
-                        <h4 class="mobile-el"><i class="fas fa-user"></i>ACCOUNT</h4>
-                    </div>
+            <li class="list-inline-item mobile-el my-3">
+                <a class="mobile-el " data-toggle="collapse" href="#collapseAccount" aria-expanded="false" aria-controls="collapseAccount">
+                    <h3><i class="fas fa-user"></i>ACCOUNT</h3>
                 </a>
-                <div class=" mobile-el" aria-labelledby="user-options">
+                <div class="collapse mb-3" id="collapseAccount">
                     {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="mobile-el"><small>Product Management - Add Product</small></a>
-                            <a href="{% url 'add_post' %}" class="mobile-el"><small>Product Management - Add Blog Post</small></a>
+                            <a href="{% url 'add_product' %}" class="mobile-el"><small>PRODUCT MANAGEMENT - Add Product</small></a>
+                            <a href="{% url 'add_post' %}" class="mobile-el"><small>PRODUCT MANAGEMENT - Add Blog Post</small></a>
                         {% endif %}
                         <a href="{% url 'profile' %}" class="mobile-el"><small>My Profile</small></a>
                         <a href="{% url 'account_logout' %}" class="mobile-el"><small>Logout</small></a>
@@ -47,14 +49,14 @@
             </li>
 
            <!-- search -->
-            <li class="list-inline-item mobile-el">
+            <li class="list-inline-item mobile-el my-3">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-80 text-center">
                         <input class="form-control border rounded-0 text-center" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn" type="submit">
                                 <span class="icon">
-                                    <i class="fas fa-search navbar-item"></i>
+                                    <i class="fas fa-search mobile-el"></i>
                                 </span>
                             </button>
                         </div>
