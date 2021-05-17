@@ -23,7 +23,7 @@ body {
 
 .shop-now-btn {
     background: #222;
-    color: #fafafa;
+    color: #FAFAFA;
     min-width: 260px;
     border-radius: 0;
 }
@@ -32,12 +32,12 @@ body {
 .shop-now-btn:active,
 .shop-now-btn:focus {
     background: #125648;
-    color: #fafafa;
+    color: #FAFAFA;
 }
 
 .btn-green {
     background: #125648;
-    color: #fafafa;
+    color: #FAFAFA;
     border-radius: 0;
 }
 
@@ -45,7 +45,7 @@ body {
 .btn-green:active,
 .btn-green:focus {
     background: #222;
-    color: #fafafa;
+    color: #FAFAFA;
 }
 
 .btn-grey {
@@ -181,8 +181,39 @@ body {
     background-color: #FAFAFA;
 }
 
+.navbar-icon i:hover,
+.navbar-icon i:active,
+.navbar-icon i:focus {
+    color: #6B9286;
+    background-color: #222;
+}
+
 .nav-link {
     padding: 0.5rem 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+    color: #222;
+    background-color: #FAFAFA;
+}
+
+.mobile-dropdown:hover,
+.mobile-dropdown:active,
+.mobile-dropdown:focus {
+    background-color: #222;
+}
+
+.mobile-dropdown i:hover,
+.mobile-dropdown i:active,
+.mobile-dropdown i:focus {
+    color: #6B9286;
+    background-color: #222;
+}
+
+.basket-el {
+    display: inline-block;
 }
 
 /* --------------------------------------------------------------- SHOP MENU */
@@ -285,10 +316,23 @@ body {
 .mobile-el:hover {
     color: #6B9286;
 }
+.mobile-el:hover,
+.mobile-el:active,
+.mobile-el:focus {
+    color: #6B9286;
+}
 
 .mobile-el i {
     padding-right: 10px;
 }
+
+.mobile-el i:hover,
+.mobile-el i:active,
+.mobile-el i:focus {
+    color: #125648;
+    background: #222;
+}
+
 
 
 
@@ -429,7 +473,7 @@ a.category-link:focus {
     right: 15px;
     z-index: 10000;
     background: #6B9286;
-    color: #fafafa;
+    color: #FAFAFA;
 }
 
 .custom-toast {
@@ -586,6 +630,9 @@ a.category-link:focus {
 @media only screen and (max-width: 600px) {
     .main-logo-link img {
         max-width: 100px;
+    }
+    .dropdown-item {
+        padding: .25rem;
     }
 }
 
