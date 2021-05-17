@@ -133,6 +133,20 @@ body {
     color: #222;
 }
 
+.quantity-btn {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #222;
+    padding: 0 5px;
+}
+
+.quantity-btn:hover,
+.quantity-btn:active,
+.quantity-btn:focus {
+    color: #125648;
+}
+
 /* ------------------------------------------------------------------ BANNER */
 
 .delivery-banner {
@@ -463,6 +477,23 @@ a.category-link:focus {
 .bag-details-div {
     border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.qty_input {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #222;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    width: 43px;
+    text-align: end;
+}
+
+.qty_input:hover,
+.qty_input:active,
+.qty_input:focus {
+    color: #125648;
 }
 
 /* ------------------------------------------------------------------ TOASTS */
