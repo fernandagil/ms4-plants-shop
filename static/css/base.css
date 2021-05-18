@@ -102,13 +102,21 @@ body {
 
 .update-link,
 .remove-item {
-    font-size: 0.8rem;
+    color: #125648;
+    font-size: 0.6rem;
+    border: 0.3px solid #125648;
+    padding: 2px 5px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 8px 0;
 }
 
 .update-link:hover,
 .remove-item:hover {
-    font-size: 0.9rem;
     cursor: pointer;
+    background: #125648;
+    color: #FAFAFA;
 }
 
 .edit-delete-btn {
@@ -485,15 +493,28 @@ a.category-link:focus {
     border-radius: 0;
     color: #222;
     padding: 0 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 43px;
-    text-align: end;
+    text-align: center;
 }
 
 .qty_input:hover,
 .qty_input:active,
 .qty_input:focus {
     color: #125648;
+}
+
+.bag-hr {
+    margin: 15px;
+    color: #125648;
+}
+
+.image-mobile-div {
+    text-align: center;
+}
+
+.image-mobile-div img {
+    max-height: 150px;
 }
 
 /* ------------------------------------------------------------------ TOASTS */
@@ -669,6 +690,11 @@ a.category-link:focus {
         width: 50px;
         font-size: 0.7rem;
     }
+    .qty_input {
+        padding: 0;
+        font-size: 0.9rem;
+        width: 23px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -679,7 +705,10 @@ a.category-link:focus {
     .sidenav {
         padding: 40px 0px 20px;
     }
-
+    .update-link,
+    .remove-item {
+        margin: 0;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
