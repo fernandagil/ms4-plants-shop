@@ -6,12 +6,18 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
+        'common_names',
         'category',
         'price',
         'image',
+        'light',
+        'soil',
+        'water',
+        'temperature',
     )
 
     ordering = ('sku',)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
