@@ -39,7 +39,6 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <h2 class="mb-3">{{ product.name }}</h2>
 
-                    <!-- <h6>Also called: {{ product.common_names }}</h6> -->
                     <div class="row">
                         <div class="col-6 text-left">
                             {% if product.category %}
@@ -53,6 +52,7 @@
                         <div class="col-6"><p class="lead mb-0 text-right font-weight-bold">${{ product.price }}</p></div>
                     </div>
 
+                    <p class="mt-4">Also called: {{ product.common_names }}</p>
                     <p class="mt-4">{{ product.description }}</p>
 
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">	
@@ -109,8 +109,8 @@
                 <p>{{ product.light }}</p>
             </div>
             <div class="col-12 col-md-2 col-lg-3">
-                <div class="h5">Watering</div>
-                <p>{{ product.watering }}</p>
+                <div class="h5">Water</div>
+                <p>{{ product.water }}</p>
             </div>
             <div class="col-12 col-md-2 col-lg-3">
                 <div class="h5">Soil</div>
