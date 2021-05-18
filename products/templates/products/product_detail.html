@@ -23,6 +23,7 @@
                         </div>
                     {% endif %}
 
+                    <!-- image -->
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -33,7 +34,6 @@
                         </a>
                     {% endif %}
                 </div>
-
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
@@ -99,22 +99,25 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-2 col-lg-3">
-                <div class="h5">Temperature</div>
-                <p>{{ product.temperature }}</p>
+        <div class="row care-info text-center">
+            <div class="col-12">
+                <h3 class="my-5 logo-font">How to care for {{ product.name }}</h3>
             </div>
             <div class="col-12 col-md-2 col-lg-3">
-                <div class="h5">Light</div>
-                <p>{{ product.light }}</p>
+                <h6 class="care-header my-3">Temperature</h6>
+                <p class="mb-4">{{ product.temperature }}</p>
             </div>
             <div class="col-12 col-md-2 col-lg-3">
-                <div class="h5">Water</div>
-                <p>{{ product.water }}</p>
+                <h6 class="care-header my-3">Light</h6>
+                <p class="mb-4">{{ product.light }}</p>
             </div>
             <div class="col-12 col-md-2 col-lg-3">
-                <div class="h5">Soil</div>
-                <p>{{ product.soil }}</p>
+                <h6 class="care-header my-3">Water</h6>
+                <p class="mb-4">{{ product.water }}</p>
+            </div>
+            <div class="col-12 col-md-2 col-lg-3">
+                <h6 class="care-header my-3">Soil</h6>
+                <p class="mb-4">{{ product.soil }}</p>
             </div>
         </div>
     </div>

@@ -480,6 +480,20 @@ a.category-link:focus {
     cursor: pointer;
 }
 
+/* ----------------------------------------------------- PRODUCT_DETAIL PAGE */
+
+.care-info {
+    background: #222;
+    color: #FAFAFA;
+    padding: 25px 15px;
+    margin: 30px 0;
+}
+
+.care-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 /* ------------------------------------------------------- SHOPPING BAG PAGE */
 
 .bag-details-div {
@@ -700,6 +714,9 @@ a.category-link:focus {
     }
     .checkout-buttons a {
         font-size: 0.9rem;
+    }
+    .main-container {
+        padding-top: 50px;
     }
 }
 
