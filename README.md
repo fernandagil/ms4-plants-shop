@@ -145,6 +145,10 @@ BUGS
 ### 6.2 Content
 
 - The posts in the blog app are originally from this article in [modsy.com](https://blog.modsy.com/home-design-tips-guides/tips-guides/indoor-plants-care/)
+- The information about the plants and how to take care of them was obtained from the following sources:
+    - https://gardeningit.com/
+    - https://www.thespruce.com/
+    - https://www.houseplantsexpert.com/
 
 ### 6.3 Media
 
