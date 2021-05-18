@@ -116,7 +116,7 @@ body {
 .remove-item:hover {
     cursor: pointer;
     background: #125648;
-    color: #FAFAFA;
+    color: #FAFAFA !important;
 }
 
 .edit-delete-btn {
@@ -385,7 +385,7 @@ body {
 }
 
 .header-container {
-    padding-top: 10px;
+    padding-top: 80px;
     background: #FAFAFA;
 }
 
@@ -695,6 +695,12 @@ a.category-link:focus {
         font-size: 0.9rem;
         width: 23px;
     }
+    .header-container {
+        padding-top: 60px;
+    }
+    .checkout-buttons a {
+        font-size: 0.9rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -724,7 +730,7 @@ a.category-link:focus {
         z-index: 5;
     }
     .header-container {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 }
 
