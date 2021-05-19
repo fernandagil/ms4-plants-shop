@@ -27,9 +27,54 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <h4>My Wishlist</h4>
-                        
                     </div>
                 </div>
+                <div class="row wishlist-container">
+                    {% if bag_items %}
+                        {% for item in bag_items %}
+                            <div class="col-6 image-mobile-div align-self-center">
+                                {% if item.product.image %}
+                                    <img class="img-fluid rounded-0" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                {% else %}
+                                    <img class="img-fluid rounded-0" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                {% endif %}
+
+                            </div>
+                            <div class="col-6 align-self-center">
+                                <p class="mb-2"><strong>{{ item.product.name }}</strong> - ${{ item.product.price }}</p>
+                                <div class="wishlist-buttons">
+                                    <a href="{% url 'products' %}" class="btn btn-wishlist">
+                                        <span class="icon">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </a>
+                                    <a href="{% url 'checkout' %}" class="btn btn-wishlist">
+                                        <span class="icon">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="row">
+                        <a href="{% url 'products' %}" class="btn btn-white">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                    </div>
+
+                {% else %}
+                    <p class="lead mb-5">Your wishlist is empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-white">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
