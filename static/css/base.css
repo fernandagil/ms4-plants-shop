@@ -375,8 +375,16 @@ body {
 
 /* ---------------------------------------------------------------- HOME PAGE */
 
-.home-page-container h1 {
-    margin-top: 140px;
+.home-page-div {
+    margin-top: 100px;
+    height: 95vh;
+}
+
+.jumbotron-div {
+    margin-top: 150px;
+    height: fit-content;
+    background: #FAFAFACC;
+    padding: 40px;
 }
 
 .main-container {
@@ -396,6 +404,35 @@ body {
     padding: 20px;
     margin-bottom: 170px;
 }
+
+.home-info {
+    background: #125648;
+    color: #FAFAFA;
+    padding: 80px 100px;
+}
+
+.home-icon i {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+.home-img-div {
+    height: 150px;
+    background: url('/media/leaves.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.home-blog-div {
+    background: #222;
+    color: #FAFAFA;
+}
+
+.latest-blog-div {
+    background: #222;
+    padding: 30px;
+}
+
+
 
 
 /* ------------------------------------------------------------ PRODUCTS PAGE */
@@ -700,6 +737,9 @@ a.category-link:focus {
     .dropdown-item {
         padding: .25rem;
     }
+    .home-info {
+        padding: 50px 10px;
+    }
     .edit-delete-btn a {
         width: 50px;
         font-size: 0.7rem;
@@ -739,6 +779,9 @@ a.category-link:focus {
     .main-logo-link img {
         max-width: 150px;
     }
+    .home-info {
+        padding: 40px 20px;
+    }
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -753,7 +796,7 @@ a.category-link:focus {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .home-page-container {
+    .home-page-div {
         padding-top: 40px;
     }
     .main-container {

@@ -10,18 +10,61 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center home-page-container">
-                <h1 class="display-4 logo-font text-black">
+    <div class="container-fluid">
+
+        <!-- jumbotron -->
+        <div class="row home-page-div">
+            <div class="col-12 text-center jumbotron-div">
+                <h1 class="display-4 logo-font mb-5">
                     Make your home greener
                 </h1>
-                <div class="my-5">
                     <h4>
                         <a href="{% url 'products' %}" class="shop-now-btn btn btn-lg text-uppercase py-3">Shop Now</a>
                     </h4>
+            </div>
+        </div>
+
+        <!-- info -->
+        <div class="row home-info text-center">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="home-icon"><i class="fas fa-tree"></i></div>
+                <h6 class="care-header my-3">Outside In</h6>
+                <p>We’re here to help re-connect people with the natural world, and to inspire them to build and maintain more beautiful spaces.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="home-icon"><i class="far fa-smile-beam"></i></div>
+                <h6 class="care-header my-3">Plants for the People</h6>
+                <p>We want our visitors to be inspired to get their hands dirty. We have a passionate and knowledgeable team at your disposal with helpful tips and tricks, and all the supplies you need to get creative at home.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="home-icon"><i class="fas fa-medal"></i></div>
+                <h6 class="care-header my-3">Quality Plants</h6>
+                <p>We offer a carefully curated selection of indoor plants and always put quality ahead of quantity.</p>
+            </div>
+        </div>
+
+        <!-- image -->
+        <div class="row home-img-div"></div>
+
+        <!-- blog -->
+        <div class="row home-blog-div text-center">
+            <div class="col-12 col-md-8 offset-md-2 latest-blog-div">
+                <div class="row">
+                    <h4 class="logo-font">Latest Plants Tips</h4>
+                    <div class="col-12 col-md-6">
+                    </div>
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12"></div>
+                        <a href="{% url 'products' %}" class="btn btn-grey text-uppercase py-3">Read them all</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+{% endblock %}
+
+{% block page_footer %}
+    <div class="container-fluid footer-container">
     </div>
 {% endblock %}
