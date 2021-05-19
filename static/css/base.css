@@ -383,8 +383,13 @@ body {
 .jumbotron-div {
     margin-top: 150px;
     height: fit-content;
-    background: #FAFAFACC;
+    background: #222222CC;
     padding: 40px;
+}
+
+.jumbotron-div h1 {
+    text-shadow: 0px 0px 4px black;
+    color: #FAFAFA;
 }
 
 .main-container {
