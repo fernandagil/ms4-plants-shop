@@ -395,6 +395,8 @@ body {
 
 .main-container {
     padding-top: 130px;
+    padding-bottom: 50px;
+    height: 100%;
     background: #FAFAFA !important;
 }
 
