@@ -59,12 +59,10 @@
                         <div class="col-2 align-self-center">
 
                             <!-- wishlist -->
-                            <form class="form" action="{% url 'add_to_wishlist' product.id %}" method="POST">	
-                                {% csrf_token %}	
-                                <div class="form-row">	
-                                    <input type="submit" class="btn btn-grey rounded-0" value="Add to Wishlist">	
-                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">	
-                                </div>	
+                            <form class="form" method="POST" action="{% url 'add_to_wishlist' product.id %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                <button class="btn btn-wishlist">Add to wishlist</button>
                             </form>
                         </div>
                     </div>

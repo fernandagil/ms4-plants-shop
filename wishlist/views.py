@@ -5,6 +5,7 @@ from django.utils import timezone
 from django.contrib import messages
 
 
+@login_required
 def wishlist(request):
     """ A view to render the wishlist template """
     items = []
@@ -31,6 +32,7 @@ def wishlist(request):
         return render(request, 'wishlist/wishlist.html', context)
 
 
+@login_required
 def add_to_wishlist(request, product_id):
     """ A view to add a item in the Wishlist """
     redirect_url = request.POST.get('redirect_url')
@@ -54,3 +56,31 @@ def add_to_wishlist(request, product_id):
     else:
         messages.error(request, "Click 'Add to wishlist' to add a item ")
         return redirect(redirect_url)
+
+
+@login_required
+def delete_from_wishlist(request, product_id):
+    """ A view to delete a item in the wishlist"""
+    redirect_url = request.POST.get('redirect_url')
+
+    user = get_object_or_404(UserProfile, user=request.user)
+    wishlist = Wishlist.objects.get_or_create(user=user)
+    wishlist_user = wishlist[0]
+    if request.POST:
+        product = Product.objects.get(pk=product_id)
+
+        # look for product in the user's wishlistItem - returns true if it exists
+        test = WishlistItem.objects.filter(product=product).exists()
+
+        if test:
+            product = WishlistItem.objects.get(product=product)
+            product.delete()
+            messages.success(request, "Product removed from wishlist")
+            return redirect(redirect_url)
+
+        if test is None:
+            messages.error(request, "You can not delete a item that is not in your wishlist")
+            return redirect(redirect_url)
+    else:
+        messages.error(request, 'Item can only be deleted from your wishlist')
+        return render(request, 'home/index.html')

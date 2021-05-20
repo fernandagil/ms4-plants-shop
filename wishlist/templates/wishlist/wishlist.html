@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="#">
-{% endblock %}
-
 {% block page_header %}
     <div class="container">
         <div class="row">
@@ -20,43 +16,47 @@
             <div class="col-12 col-sm-10 offset-sm-1 dark-container">
                 <div class="row">
                     <div class="col">
-                        <h2 class="logo-font mb-4">My Profile</h2>
-                        <hr>
+                        <h4 class="mb-4 text-right">My Profile</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <h4>My Wishlist</h4>
+                    <div class="col-12">
+                        <h2 class="logo-font text-center my-3">My Wishlist</h2>
+                        <hr>
                     </div>
                 </div>
-                <div class="row wishlist-container">
-                    {% if bag_items %}
-                        {% for item in bag_items %}
-                            <div class="col-6 image-mobile-div align-self-center">
-                                {% if item.product.image %}
-                                    <img class="img-fluid rounded-0" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                {% if wishlist %}
+                    {% for product in products %}
+                        <!-- wishlist item -->
+                        <div class="row wishlist-container text-center">
+                            <div class="col-4 wishlist-col wishlist-img-div align-self-center">
+                                {% if product.image %}
+                                    <img class="img-fluid rounded-0" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
-                                    <img class="img-fluid rounded-0" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded-0" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 {% endif %}
 
                             </div>
-                            <div class="col-6 align-self-center">
-                                <p class="mb-2"><strong>{{ item.product.name }}</strong> - ${{ item.product.price }}</p>
-                                <div class="wishlist-buttons">
-                                    <a href="{% url 'products' %}" class="btn btn-wishlist">
-                                        <span class="icon">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-wishlist">
-                                        <span class="icon">
-                                            <i class="fas fa-shopping-bag"></i>
-                                        </span>
-                                    </a>
+                            <div class="col-8 wishlist-col align-self-center">
+                                <p class="mb-2"><strong>{{ product.name }}</strong> - ${{ product.price }}</p>
+                                <div class="row wishlist-buttons">
+                                    <div class="col-6">
+                                        <form class="form" method="POST" action="{% url 'delete_from_wishlist' product.id %}">
+                                            {% csrf_token %}
+                                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                            <button class="btn btn-wishlist"><small>Remove from wishlist<i class="fas fa-heart"></i></small></button>
+                                        </form>
+                                    </div>
+                                    <div class="col-6">
+                                        <form class="form" method="POST" action="{% url 'product_detail' product.id %}">
+                                            {% csrf_token %}
+                                            <button class="btn btn-wishlist"><small>Add to Bag <i class="fas fa-shopping-bag"></i></small></button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        {% endfor %}
-                    </div>
+                        </div>
+                    {% endfor %}
                     <div class="row">
                         <a href="{% url 'products' %}" class="btn btn-white">
                             <span class="icon">

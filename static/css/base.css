@@ -573,6 +573,31 @@ a.category-link:focus {
     max-height: 150px;
 }
 
+/* ----------------------------------------------------------- WISHLIST PAGE */
+
+.wishlist-container {
+    padding: 10px 50px;
+    margin: 5px 40px;
+    border-radius: 0;
+    color: #FAFAFA;
+    background: #222;
+}
+
+.wishlist-img-div img {
+    max-height: 180px;
+}
+
+.btn-wishlist {
+    color: #FAFAFA;
+}
+
+.btn-wishlist:hover,
+.btn-wishlist:active,
+.btn-wishlist:focus {
+    color: #6B9286;
+}
+
+
 /* ------------------------------------------------------------------ TOASTS */
 
 .message-container {
@@ -762,6 +787,16 @@ a.category-link:focus {
     }
     .main-container {
         padding-top: 50px;
+    }
+    .wishlist-container {
+        padding: 10px 2px;
+        margin: 5px 0;
+    }
+    .wishlist-img-div img {
+        max-height: 100px;
+    }
+    .wishlist-col {
+        padding: 2px;
     }
 }
 
