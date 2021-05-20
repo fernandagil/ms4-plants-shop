@@ -22,7 +22,7 @@ body {
 /* ----------------------------------------------------------------- BUTTONS */
 
 .shop-now-btn {
-    background: #222;
+    background: #125648;
     color: #FAFAFA;
     min-width: 260px;
     border-radius: 0;
@@ -31,7 +31,7 @@ body {
 .shop-now-btn:hover,
 .shop-now-btn:active,
 .shop-now-btn:focus {
-    background: #125648;
+    background: #222;
     color: #FAFAFA;
 }
 
@@ -800,6 +800,14 @@ a.category-link:focus {
     .wishlist-col {
         padding: 2px;
     }
+    .jumbotron-div {
+        margin-top: 80px;
+        padding: 30px;
+    }
+    .jumbotron-div h1 {
+        font-size: 2.5rem;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
