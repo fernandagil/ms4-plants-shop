@@ -58,43 +58,51 @@
 
                     <!-- larger screens bag -->
                     <div class="table-responsive rounded-0 d-none d-md-block">
-                        <table class="table table-sm table-borderless">
-                            <thead class="text-black">
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
+                        <div class="row">
+                            <div class="col-10">
+                                <h5>Products</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5>Subtotal</h5>
+                            </div>
+                        </div>
 
-                            {% for item in bag_items %}
-                                <tr>
-                                    <td class="p-3 w-25">
-                                        {% include "bag/product-image.html" %}
-                                    </td>
-                                    <td class="py-3">
-                                        {% include "bag/product-info.html" %}
+                        {% for item in bag_items %}
+                            <div class="row mb-4">
+                                <div class="col-3 align-self-center float-right">
+                                    {% include "bag/product-image.html" %}
+                                </div>
+                                <div class="col-9 align-self-center">
+                                    <div class="row mb-1">
+                                        <div class="col-9">
+                                            {% include "bag/product-info.html" %}
+                                        </div>
+                                        <div class="col-3 text-right">
+                                            <h5 class="mb-1">${{ item.product.price | calc_subtotal:item.quantity }}</h5>
+                                            <a class="remove-item d-inline-block my-2" id="remove_{{ item.item_id }}">Remove</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            {% include "bag/quantity-form.html" %}
+                                            <a class="update-link d-inline-block float-right">Update</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
 
-                                        {% include "bag/quantity-form.html" %}
-                                    </td>                             
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                        <a class="remove-item d-block my-2" id="remove_{{ item.item_id }}">Remove</a>
-                                        <a class="update-link d-block">Update</a>
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                            <tr class="bag-details-div">
-                                <td colspan="5" class="pt-4 text-right">
-                                    {% include "bag/bag-total.html" %}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="text-right">
+                        <div class="row mb-4">
+                            <div class="col-12 text-center">
+                                <div class="bag-details-div">
+                                    <div class="pt-4 text-right">
+                                        {% include "bag/bag-total.html" %}
+                                    </div>
+                                </div>
+                                <div class="text-right pt-4">
                                     {% include "bag/checkout-buttons.html" %}
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>

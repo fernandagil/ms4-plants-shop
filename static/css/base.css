@@ -106,7 +106,8 @@ body {
     font-size: 0.6rem;
     border: 0.3px solid #125648;
     padding: 2px 5px;
-    width: 50px;
+    width: 60px;
+    height: 20px;
     text-align: center;
     vertical-align: middle;
     margin: 8px 0;
@@ -541,6 +542,7 @@ a.category-link:focus {
 .bag-details-div {
     border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 10px 0;
 }
 
 .qty_input {
