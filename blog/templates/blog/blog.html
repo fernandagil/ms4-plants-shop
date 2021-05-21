@@ -31,7 +31,11 @@
                                 {% if request.user.is_superuser %}
                                     <div class="card-header edit-delete-btn">
                                         <a class="btn btn-grey float-left" href="{% url 'edit_post' post.id %}"><small>Edit</small></a>
-                                        <a class="btn btn-grey float-right" href="{% url 'delete_post' post.id %}"><small>Delete</small></a>
+                                        <a class="btn btn-grey float-right" data-toggle="modal" data-target="#deleteModal"><small>Delete</small></a>
+                                        <!-- <button type="button" class="btn btn-grey float-right" data-toggle="modal" data-target="#deleteModal">
+                                            <small>Delete</small>
+                                        </button> -->
+                                        <!-- <a class="btn btn-grey float-right" href="{% url 'delete_post' post.id %}"><small>Delete</small></a> -->
                                     </div>
                                 {% endif %}
                                 
@@ -54,6 +58,24 @@
                         {% if forloop.counter|divisibleby:2 %}
                             <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5"></div>
                         {% endif %}
+
+                        <!-- delete modal -->
+                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p>Are you sure you want to delete this?</p>
+                                        <button type="button" class="btn btn-green" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-green"><a href="{% url 'delete_post' post.id %}">Yes, delete it!</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
@@ -66,6 +88,7 @@
             <i class="fas fa-arrow-up mx-auto my-auto"></i>
         </a>	
     </div>
+
 {% endblock %}
 
 {% block postloadjs %}
