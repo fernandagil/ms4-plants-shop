@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-q(epzp(7d_v)$hn)-pv7os)lm@&ofw__7@v0@9^8lumax1cj2z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ms4-plants-shop.herokuapp.com', 'localhost']
 
 
 # Application definition

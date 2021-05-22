@@ -1,0 +1,1 @@
+web: gunicorn plants_shop.wsgi:application
