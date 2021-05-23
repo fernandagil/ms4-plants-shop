@@ -838,6 +838,9 @@ a.category-link:focus {
     .remove-item {
         margin: 0;
     }
+    .main-container {
+        padding-top: 70px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
