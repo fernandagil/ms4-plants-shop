@@ -33,7 +33,7 @@ body {
 .shop-now-btn {
     background: #125648;
     color: #FAFAFA;
-    min-width: 260px;
+    min-width: 230px;
     border-radius: 0;
 }
 
@@ -350,9 +350,6 @@ body {
     transition: 0.3s;
 }
   
-.mobile-el:hover {
-    color: #6B9286;
-}
 .mobile-el:hover,
 .mobile-el:active,
 .mobile-el:focus {
@@ -456,6 +453,24 @@ body {
 
 .blog-home-image {
     max-width: 600px;
+}
+
+.categ-img {
+    max-width: 300px;
+}
+
+.categ-header {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #222;
+    text-transform: uppercase;
+}
+  
+.categ-header:hover,
+.categ-header:active,
+.categ-header:focus {
+    color: #6B9286;
+    text-decoration: none;
 }
 
 
@@ -837,6 +852,9 @@ a.category-link:focus {
     .blog-home-image {
         max-width: 240px;
     }
+    .categ-img {
+        max-width: 250px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -879,6 +897,9 @@ a.category-link:focus {
     }
     .blog-home-image {
         max-width: 400px;
+    }
+    .categ-img {
+        max-width: 180px;
     }
 }
 
