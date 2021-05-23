@@ -454,7 +454,9 @@ body {
     padding: 30px;
 }
 
-
+.blog-home-image {
+    max-width: 600px;
+}
 
 
 /* ------------------------------------------------------------ PRODUCTS PAGE */
@@ -832,7 +834,9 @@ a.category-link:focus {
     .jumbotron-div h1 {
         font-size: 2.5rem;
     }
-    
+    .blog-home-image {
+        max-width: 240px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -849,6 +853,9 @@ a.category-link:focus {
     }
     .main-container {
         padding-top: 70px;
+    }
+    .blog-home-image {
+        max-width: 300px;
     }
 }
 
@@ -869,6 +876,9 @@ a.category-link:focus {
     }
     .header-container {
         padding-top: 60px;
+    }
+    .blog-home-image {
+        max-width: 400px;
     }
 }
 
