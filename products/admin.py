@@ -14,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
         'soil',
         'water',
         'temperature',
+        'alternative_care'
     )
 
     ordering = ('sku',)

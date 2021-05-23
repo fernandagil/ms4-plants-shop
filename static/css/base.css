@@ -553,6 +553,15 @@ a.category-link:focus {
     letter-spacing: 2px;
 }
 
+/* ------------------------------------------------------- ADD PRODUCTS PAGE */
+
+.remember-note {
+    margin: 20px;
+    padding: 30px;
+    background: #6B9286;
+    color: #FAFAFA;
+}
+
 /* ------------------------------------------------------- SHOPPING BAG PAGE */
 
 .bag-details-div {

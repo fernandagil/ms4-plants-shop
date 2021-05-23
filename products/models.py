@@ -29,6 +29,7 @@ class Product(models.Model):
     soil = models.TextField(null=True, blank=True)
     water = models.TextField(null=True, blank=True)
     temperature = models.TextField(null=True, blank=True)
+    alternative_care = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.name
