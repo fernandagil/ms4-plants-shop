@@ -32,19 +32,19 @@
                 <div class="row my-5">
                     <div class="col-12 col-md-4 mb-3 px-3">
                         <a href="{% url 'products' %}?category=indoor">
-                            <img src="media/greenery-categ.jpg" class="categ-img" alt="indoor-greenery-category">
+                            <img src="{{ MEDIA_URL }}greenery-categ.jpg" class="categ-img" alt="indoor-greenery-category">
                             <h4 class="categ-header my-3 logo-font">Indoor Plants</h4>
                         </a>
                     </div>
                     <div class="col-12 col-md-4 mb-3 px-3">
                         <a href="{% url 'products' %}?category=indoor">
-                            <img src="media/flowers-categ.jpg" class="categ-img" alt="dry-flowers-category">
+                            <img src="{{ MEDIA_URL }}flowers-categ.jpg" class="categ-img" alt="dry-flowers-category">
                             <h4 class="categ-header my-3 logo-font">Dry Flowers</h4>
                         </a>
                     </div>
                     <div class="col-12 col-md-4 mb-3 px-3">
                         <a href="{% url 'products' %}?category=indoor">
-                            <img src="media/cacti-categ.jpg" class="categ-img" alt="cacti-category">
+                            <img src="{{ MEDIA_URL }}cacti-categ.jpg" class="categ-img" alt="cacti-category">
                             <h4 class="categ-header my-3 logo-font">Cacti</h4>
                         </a>
                     </div>
@@ -55,7 +55,7 @@
                     <div class="col-12 latest-blog-div">
                         <div class="row text-center">
                             <div class="col-12 col-lg-7 align-self-center">
-                                <img src="media/plants-shop.jpg" class="blog-home-image" alt="blog_image">
+                                <img src="{{ MEDIA_URL }}plants-shop.jpg" class="blog-home-image" alt="blog_image">
                             </div>
                             <div class="col-12 col-lg-5 align-self-center">
                                 <h4 class="logo-font my-4">Not everybody has a green thumb!</h4>
