@@ -12,7 +12,7 @@ body {
 }
 
 .text-green {
-    color: #125648 !important;
+    color: #4D6A61 !important;
 }
 
 .form-control {
@@ -31,7 +31,7 @@ body {
 /* ----------------------------------------------------------------- BUTTONS */
 
 .shop-now-btn {
-    background: #125648;
+    background: #4D6A61;
     color: #FAFAFA;
     min-width: 230px;
     border-radius: 0;
@@ -42,10 +42,11 @@ body {
 .shop-now-btn:focus {
     background: #222;
     color: #FAFAFA;
+    border: 1px solid #FAFAFA;
 }
 
 .btn-green {
-    background: #125648;
+    background: #4D6A61;
     color: #FAFAFA;
     border-radius: 0;
 }
@@ -71,7 +72,7 @@ body {
 .btn-grey:hover,
 .btn-grey:active,
 .btn-grey:focus {
-    background: #125648;
+    background: #4D6A61;
     color: #FAFAFA;
     border: 1px solid #222;
 }
@@ -86,9 +87,9 @@ body {
 .btn-white:hover,
 .btn-white:active,
 .btn-white:focus {
-    background: #125648;
+    background: #4D6A61;
     color: #FAFAFA !important;
-    border: 1px solid #125648;
+    border: 1px solid #4D6A61;
 }
 
 .back-top-btn {
@@ -104,7 +105,7 @@ body {
 .back-top-btn:hover,
 .back-top-btn:active,
 .back-top-btn:focus {
-    background: #12564877;
+    background: #4D6A6177;
     color: #FAFAFA;
 }
 
@@ -116,9 +117,9 @@ body {
 
 .update-link,
 .remove-item {
-    color: #125648;
+    color: #4D6A61;
     font-size: 0.6rem;
-    border: 0.3px solid #125648;
+    border: 0.3px solid #4D6A61;
     padding: 2px 5px;
     width: 60px;
     height: 20px;
@@ -130,7 +131,7 @@ body {
 .update-link:hover,
 .remove-item:hover {
     cursor: pointer;
-    background: #125648;
+    background: #4D6A61;
     color: #FAFAFA !important;
 }
 
@@ -167,7 +168,7 @@ body {
 .quantity-btn:hover,
 .quantity-btn:active,
 .quantity-btn:focus {
-    color: #125648;
+    color: #4D6A61;
 }
 
 /* ------------------------------------------------------------------ BANNER */
@@ -221,7 +222,7 @@ body {
 .navbar-icon i:hover,
 .navbar-icon i:active,
 .navbar-icon i:focus {
-    color: #6B9286;
+    color: #9FBBAF;
     background-color: #222;
 }
 
@@ -245,7 +246,7 @@ body {
 .mobile-dropdown i:hover,
 .mobile-dropdown i:active,
 .mobile-dropdown i:focus {
-    color: #6B9286;
+    color: #9FBBAF;
     background-color: #222;
 }
 
@@ -285,7 +286,7 @@ body {
 }
   
 .sidenav a:hover {
-    color: #6B9286;
+    color: #9FBBAF;
 }
 
 .sidenav .closebtn,
@@ -313,7 +314,7 @@ body {
 .search-icon:hover,
 .search-icon:active,
 .search-icon:focus {
-    color: #125648;
+    color: #4D6A61;
     text-decoration: none;
 }
 
@@ -338,7 +339,7 @@ body {
 }
   
 .mobilenav a:hover {
-    color: #6B9286;
+    color: #9FBBAF;
 }
 
 .mobile-el {
@@ -353,7 +354,7 @@ body {
 .mobile-el:hover,
 .mobile-el:active,
 .mobile-el:focus {
-    color: #6B9286;
+    color: #9FBBAF;
 }
 
 .mobile-el i {
@@ -363,7 +364,7 @@ body {
 .mobile-el i:hover,
 .mobile-el i:active,
 .mobile-el i:focus {
-    color: #125648;
+    color: #4D6A61;
     background: #222;
 }
 
@@ -469,7 +470,7 @@ body {
 .categ-header:hover,
 .categ-header:active,
 .categ-header:focus {
-    color: #6B9286;
+    color: #9FBBAF;
     text-decoration: none;
 }
 
@@ -537,7 +538,7 @@ body {
 .product-name:hover,
 .product-name:active,
 .product-name:focus {
-    color: #6B9286;
+    color: #9FBBAF;
     text-decoration: none;
 }
 
@@ -558,7 +559,7 @@ a.category-link {
 a.category-link:hover,
 a.category-link:active,
 a.category-link:focus {
-    color: #125648;
+    color: #4D6A61;
     text-decoration: none;
 
 }
@@ -586,7 +587,7 @@ a.category-link:focus {
 .remember-note {
     margin: 20px;
     padding: 30px;
-    background: #6B9286;
+    background: #9FBBAF;
     color: #FAFAFA;
 }
 
@@ -612,12 +613,12 @@ a.category-link:focus {
 .qty_input:hover,
 .qty_input:active,
 .qty_input:focus {
-    color: #125648;
+    color: #4D6A61;
 }
 
 .bag-hr {
     margin: 15px;
-    color: #125648;
+    color: #4D6A61;
 }
 
 .image-mobile-div {
@@ -649,7 +650,7 @@ a.category-link:focus {
 .btn-wishlist:hover,
 .btn-wishlist:active,
 .btn-wishlist:focus {
-    color: #6B9286;
+    color: #9FBBAF;
 }
 
 
@@ -660,7 +661,7 @@ a.category-link:focus {
     top: 72px;
     right: 15px;
     z-index: 10000;
-    background: #6B9286;
+    background: #9FBBAF;
     color: #FAFAFA;
 }
 
@@ -695,7 +696,7 @@ a.category-link:focus {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #ABC3B9;
+    color: #9FBBAF;
 }
 
 .allauth-form-inner-content button,
@@ -727,7 +728,7 @@ a.category-link:focus {
 }
 
 .allauth-form-inner-content a {
-	color: #ABC3B9;
+	color: #9FBBAF;
 }
 
 /* ------------------------------------------------------------ PRODUCT FORM */
