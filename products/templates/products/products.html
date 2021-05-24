@@ -63,7 +63,7 @@
                 </div>
 
                 <!-- products -->
-                <div class="row">
+                <div class="row my-4">
                     {% for product in products %}
                         <div class="col-6 col-md-4 col-lg-3 card-group mb-3">
                             <div class="card h-80 border-0">
@@ -86,9 +86,12 @@
                                     </a>
                                 {% endif %}
 
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
-                                </div>
+                                    <div class="card-body pb-0">
+                                        <a href="{% url 'product_detail' product.id %}">
+                                            <p class="mb-0 product-name">{{ product.name }}</p>
+                                        </a>
+                                    </div>
+                                </a>
                                 <div class="card-footer pb-0">
                                     <p class="mb-0 text-right">${{ product.price }}</p>
                                 </div>

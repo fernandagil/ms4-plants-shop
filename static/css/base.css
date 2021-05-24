@@ -521,12 +521,24 @@ body {
 
 .card {
     border-radius: 0;
-    background: #FAFAFA;
-    color: #222;
+    background: #222;
+    color: #FAFAFA;
 }
 
 .card img {
     border-radius: 0;
+}
+
+.product-name {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.product-name:hover,
+.product-name:active,
+.product-name:focus {
+    color: #6B9286;
+    text-decoration: none;
 }
 
 .card-footer {
@@ -535,8 +547,7 @@ body {
 
 .card-footer p {
     padding-bottom: .75rem;
-    font-family: 'Playfair Display', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 a.category-link {
