@@ -115,53 +115,62 @@
         </div>
         <div class="row care-info text-center">
 
-            <div class="col-12">
+            <div class="col-12 mb-4">
                 <h3 class="my-5 logo-font">How to care for {{ product.name }}</h3>
+
+                {% if product.light %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h6 class="care-header my-3">Light</h6>
+                        </div>
+                        <div class="col-12 col-md-8 pl-md-3">
+                            <p class="mb-4"><small>{{ product.light }}</small></p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if product.water %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h6 class="care-header my-3">Water</h6>
+                        </div>
+                        <div class="col-12 col-md-8 pl-md-3">
+                            <p class="mb-4"><small>{{ product.water }}</small></p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if product.soil %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h6 class="care-header my-3">Soil</h6>
+                        </div>
+                        <div class="col-12 col-md-8 pl-md-3">
+                            <p class="mb-4"><small>{{ product.soil }}</small></p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if product.temperature %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h6 class="care-header my-3">Temperature</h6>
+                        </div>
+                        <div class="col-12 col-md-8 pl-md-3">
+                            <p class="mb-4"><small>{{ product.temperature }}</small></p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if product.alternative_care %}
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="mb-4"><small>{{ product.alternative_care }}</small></p>
+                        </div>
+                    </div>
+                {% endif %}
+
             </div>
-
-            {% if product.light %}
-                <div class="col-12 col-md-4">
-                    <h6 class="care-header my-3">Light</h6>
-                </div>
-                <div class="col-12 col-md-8 pl-md-3">
-                    <p class="mb-4"><small>{{ product.light }}</small></p>
-                </div>
-            {% endif %}
-
-            {% if product.water %}
-                <div class="col-12 col-md-4">
-                    <h6 class="care-header my-3">Water</h6>
-                </div>
-                <div class="col-12 col-md-8 pl-md-3">
-                    <p class="mb-4"><small>{{ product.water }}</small></p>
-                </div>
-            {% endif %}
-
-            {% if product.temperature %}
-                <div class="col-12 col-md-4">
-                    <h6 class="care-header my-3">Temperature</h6>
-                </div>
-                <div class="col-12 col-md-8 pl-md-3">
-                    <p class="mb-4"><small>{{ product.temperature }}</small></p>
-                </div>
-            {% endif %}
-
-            {% if product.soil %}
-                <div class="col-12 col-md-4">
-                    <h6 class="care-header my-3">Soil</h6>
-                </div>
-                <div class="col-12 col-md-8 pl-md-3">
-                    <p class="mb-4"><small>{{ product.soil }}</small></p>
-                </div>
-            {% endif %}
-
-            {% if product.alternative_care %}
-
-                <div class="col-12 text-center">
-                    <p class="mb-4"><small>{{ product.alternative_care }}</small></p>
-                </div>
-            {% endif %}
-
         </div>
     </div>
 {% endblock %}
