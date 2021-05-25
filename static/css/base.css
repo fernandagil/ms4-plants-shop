@@ -528,6 +528,7 @@ body {
 
 .card img {
     border-radius: 0;
+    max-height: 275px;
 }
 
 .product-name {
