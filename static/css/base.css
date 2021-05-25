@@ -667,12 +667,34 @@ a.category-link:focus {
 
 /* ------------------------------------------------------------------ TOASTS */
 
+.toast {
+    background-color: transparent;
+    backdrop-filter: none;
+}
+
+.toast-header {
+    background-color: transparent;
+    border-bottom: 0;
+    justify-content: flex-end;
+}
+
+.close-toast {
+    color: #FAFAFA;
+    font-size: 1.3rem;
+}
+
+.btn-wishlist:hover,
+.btn-wishlist:active,
+.btn-wishlist:focus {
+    color: #9FBBAF;
+}
+
 .message-container {
     position: fixed;
     top: 72px;
     right: 15px;
     z-index: 10000;
-    background: #9FBBAF;
+    background: #4D6A61;
     color: #FAFAFA;
 }
 
