@@ -644,6 +644,16 @@ a.category-link:focus {
     max-height: 180px;
 }
 
+.btn-wishlist {
+    color: #FAFAFA;
+    font-size: 1.3rem;
+}
+
+.btn-wishlist:hover,
+.btn-wishlist:active,
+.btn-wishlist:focus {
+    color: #9FBBAF;
+}
 
 /* ------------------------------------------------------------------ TOASTS */
 

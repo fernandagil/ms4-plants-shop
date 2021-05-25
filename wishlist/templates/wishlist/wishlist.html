@@ -34,18 +34,16 @@
                             </div>
                             <div class="col-8 wishlist-col align-self-center">
                                 <p class="mb-2"><strong>{{ product.name }}</strong> - ${{ product.price }}</p>
-                                <div class="row wishlist-buttons">
-                                    <div class="col-6">
-                                        <form class="form" method="POST" action="{% url 'delete_from_wishlist' product.id %}">
+                                <div class="row wishlist-buttons my-3">
+                                    <div class="col-12">
+                                        <form class="form d-inline-block" method="POST" action="{% url 'delete_from_wishlist' product.id %}">
                                             {% csrf_token %}
                                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                            <button class="btn btn-wishlist"><small>Remove from wishlist<i class="fas fa-heart"></i></small></button>
+                                            <button class="btn btn-wishlist"><i class="fas fa-heart"></i></button>
                                         </form>
-                                    </div>
-                                    <div class="col-6">
-                                        <form class="form" method="POST" action="{% url 'product_detail' product.id %}">
+                                        <form class="form d-inline-block" method="POST" action="{% url 'product_detail' product.id %}">
                                             {% csrf_token %}
-                                            <button class="btn btn-wishlist"><small>Add to Bag <i class="fas fa-shopping-bag"></i></small></button>
+                                            <button class="btn btn-wishlist"><i class="fas fa-shopping-bag"></i></button>
                                         </form>
                                     </div>
                                 </div>
