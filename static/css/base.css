@@ -526,7 +526,7 @@ body {
     color: #FAFAFA;
 }
 
-.card img {
+.card-img {
     border-radius: 0;
     max-height: 275px;
 }
