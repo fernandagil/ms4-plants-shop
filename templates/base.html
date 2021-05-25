@@ -71,7 +71,7 @@
             <!-- logo -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center align-self-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="{{ MEDIA_URL }}logo.jpg" alt="">
+                    <img src="{{ MEDIA_URL }}logo.jpg" alt="Plantas&co logo">
                 </a>
             </div>
 
@@ -140,6 +140,36 @@
 
     {% block content %}
     {% endblock %}
+
+    <footer class="footer">
+        <div class="row">
+            <!-- logo -->
+            <div class="col-12 col-md-4 my-auto py-3 text-center align-self-center">
+                <a href="{% url 'home' %}" class="nav-link footer-logo-link">
+                    <img src="{{ MEDIA_URL }}logo.jpg" alt="Plantas&co logo">
+                </a>
+            </div>
+            <!-- contact us -->
+            <div class="col-12 col-md-4 my-auto py-3 text-center align-self-center order-md-first">
+                <p>Contact us</p>
+                <div>
+                    <i class="fas fa-phone"></i><span>0123012045</span>
+                </div>
+                <div>
+                    <i class="fas fa-at"></i><span>info@plantas.com</span>
+                </div>
+            </div>
+            <!-- follow us -->
+            <div class="col-12 col-md-4 my-auto py-3 text-center align-self-center">
+                <p>Follow us</p>
+                <p>
+                    <i class="fab fa-instagram footer-i"></i>
+                    <i class="fab fa-facebook-square footer-i"></i>
+                    <i class="fab fa-tiktok footer-i"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     {% block postloadjs %}
 
