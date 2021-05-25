@@ -72,7 +72,7 @@
                                 {% if request.user.is_superuser %}
                                     <div class="card-header edit-delete-btn">
                                         <a class="btn btn-grey float-left" href="{% url 'edit_product' product.id %}"><small>Edit</small></a>
-                                        <a class="btn btn-grey float-right" data-toggle="modal" data-target="#deleteProduct"><small>Delete</small></a>
+                                        <a class="btn btn-grey float-right" data-toggle="modal" data-target="#deleteProduct-{{product.id}}"><small>Delete</small></a>
                                     </div>
                                 {% endif %}
                                 
@@ -99,7 +99,7 @@
                         </div>
 
                         <!-- delete modal -->
-                        <div class="modal fade" id="deleteProduct" tabindex="-1" role="dialog" aria-labelledby="deleteProductLabel" aria-hidden="true">
+                        <div class="modal fade" id="deleteProduct-{{product.id}}" tabindex="-1" role="dialog" aria-labelledby="deleteProductLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
