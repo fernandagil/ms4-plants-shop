@@ -239,6 +239,10 @@ body {
     padding: 0.5rem 0;
 }
 
+.dropdown-item {
+    padding: 0.25rem 1rem;
+}
+
 .dropdown-item:hover,
 .dropdown-item:active,
 .dropdown-item:focus {
