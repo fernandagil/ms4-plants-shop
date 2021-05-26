@@ -400,6 +400,14 @@ body {
 .footer-i {
     padding: 3px;
     margin: 5px 20px;
+    color: #FAFAFA;
+    font-size: 1.1rem;
+}
+
+.footer-i:hover,
+.footer-i:active,
+.footer-i:focus {
+    color: #9FBBAF;
 }
 
 /* ---------------------------------------------------------------- HOME PAGE */
@@ -424,7 +432,7 @@ body {
 .main-container {
     padding-top: 130px;
     padding-bottom: 50px;
-    height: 100%;
+    min-height: 83vh;
     background: #FAFAFA !important;
 }
 
@@ -714,9 +722,8 @@ a.category-link:focus {
 
 /* ----------------------------------------------------------- ALLAUTH FORMS */
 .account-container {
-    background: url('/media/profile.jpg') no-repeat center center fixed;
-    background-size: cover;
     padding-top: 164px;
+    min-height: 90vh;
 }
 
 .allauth-form-inner-content input {
