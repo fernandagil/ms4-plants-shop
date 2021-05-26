@@ -12,9 +12,8 @@ Besides shopping, users of Plantas&co. will find a blog where both beginners and
   - <a href="#1-UX-4">1.4 Database Design</a>
   - <a href="#1-UX-5">1.5 Wireframes</a>
 - <a href="#2-FEAT">2. Features</a>
-  - <a href="#2-FEAT-1">2.1 CRUD</a>
-  - <a href="#2-FEAT-1">2.2 Existing Features</a>
-  - <a href="#2-FEAT-3">2.3 Potential Features</a>
+  - <a href="#2-FEAT-1">2.1 Existing Features</a>
+  - <a href="#2-FEAT-2">2.2 Potential Features</a>
 - <a href="#3-TECH">3. Technologies Used</a>
 - <a href="#4-TEST">4. Testing</a>
 - <a href="#5-DEPL">5. Deployment</a>
@@ -96,13 +95,75 @@ To give the project a clean look, the main colors chosen were off-black and off-
 ## 2. Features
 
 <span id="2-FEAT-1"></span>
-### 2.1 CRUD functionality
-
-<span id="2-FEAT-2"></span>
-### 2.2 Existing Features
+### 2.1 Existing Features
  
-<span id="2-FEAT-3"></span>
-### 2.3 Potential Features
+**Site wide**:
+- **Navbar**: gives consistency and allow users to navigate the site in an easy and intuitive way. There are two versions of it: one for larger screen sizes and one for smaller screen sizes. Both of them include the same features:
+
+  - **Home Button**: allows users to go back to the Home page from any part of the page
+  - **Shop Button**: opens a side menu in larger screen sizes and a dropdown in mobile that allows users to go to the 'All Products' page and to the main categories: Indoor Greenery, Cacti and Dry Flowers
+  - **Plants Tips Button**: allows users to go to the Blog
+  - **Logo**: allows users to identify where they are and to go back to the Home page from any part of the page.
+  - **Search Icon Button**: in larger screen sizes opens a side nav menu that allow users to search for any product in the shop
+  - **Bag Icon Button**: allows users to access the Shopping Bag page from any part of the site
+  - **Account Button**: opens a side menu in larger screen sizes and a dropdown in mobile that shows different features depending on the user type:
+    - Anonymous users can see a ‘Register’ and a ‘Login’ link
+    Registered users can see a ‘My Profile’, ‘My Wishlist’ and ‘logout’ links
+    Superusers can see the same ‘My Profile’, ‘My Wishlist’ and ‘Logout’ links and also ‘Product Management - Add Product’ and ‘Product Management - Add Blog Post’ 
+
+- **Footer**:
+  - **Contact Us**: informs users of the shop's (fake) contact details
+  - **Logo**: reminds users where they are and to go back to the Home page from any part of the page.
+  - **Follow Us**: allows users to view the shop's (fake) social accounts
+
+- **Home Page**: 
+  - **Jumbotron**: works as a call to action and includes a button for the users to go directly to the All Products page
+  - **Links to main categories**: allows users to access directly the category they are searching for: Indoor Plants, Dry Flowers and Cacti
+  - **Blog Link**: informs the user that the shop also offers advice about plants and encourage them to visit the blog
+  - **Shop values**: gives the users a quick glance about the shop's values
+
+- **Products Page**
+
+- **Product Detail Page**
+
+- **Bag Page**
+
+- **Checkout Page**
+
+- **Checkout Success Page**
+
+- **Profile Page**
+
+- **Wishlist Page**
+
+- **Blog Page**
+
+- **Blog Post Page**
+
+- **Register Page**
+
+- **Log In Page**
+
+- **Log Out Page**
+
+
+Restricted to Superusers
+
+- **Add Product Page**
+
+- **Edit Product Page**
+
+- **Add Blog Post Page**
+
+- **Edit Blog Post Page**
+
+
+
+
+
+ 
+<span id="2-FEAT-2"></span>
+### 2.2 Potential Features
 
 
 ---
