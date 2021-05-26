@@ -1,6 +1,7 @@
 <!-- account nav -->
 <div id="myAccountNav" class="sidenav rightnav" aria-labelledby="user-options">
     <a href="javascript:void(0)" class="closebtn" onclick="closeAccountNav()">&times;</a>
+    <hr>
 
     {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
@@ -20,6 +21,7 @@
 <!-- search nav -->
 <div id="mySearchNav" class="sidenav rightnav" aria-labelledby="user-options">
     <a href="javascript:void(0)" class="closebtn" onclick="closeSearchNav()">&times;</a>
+    <hr>
 
     <h6 class="sidenav-text">Search</h6>
     <form method="GET" action="{% url 'products' %}">
