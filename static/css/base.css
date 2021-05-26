@@ -433,7 +433,6 @@ body {
 
 .main-container {
     padding-top: 130px;
-    padding-bottom: 50px;
     min-height: 83vh;
     background: #FAFAFA !important;
 }
@@ -615,6 +614,13 @@ a.category-link:focus {
 }
 
 /* ------------------------------------------------------- SHOPPING BAG PAGE */
+
+.bag-container {
+    padding-top: 30px;
+    min-height: 83vh;
+    background: #FAFAFA !important;
+    width: 100%;
+}
 
 .bag-details-div {
     border-top: 1px solid rgba(0,0,0,.1);

@@ -1,12 +1,16 @@
-<a href="{% url 'products' %}" class="btn btn-grey">
-    <span class="icon">
-        <i class="fas fa-chevron-left"></i>
-    </span>
-    <span class="text-uppercase">Keep Shopping</span>
-</a>
-<a href="{% url 'checkout' %}" class="btn btn-green">
-    <span class="text-uppercase">Secure Checkout</span>
-    <span class="icon">
-        <i class="fas fa-lock"></i>
-    </span>
-</a>
+<div class="float-left d-inline-block">
+    <a href="{% url 'products' %}" class="btn btn-grey">
+        <span class="icon">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="text-uppercase">Keep Shopping</span>
+    </a>
+</div>
+<div class="float-right d-inline-block">
+    <a href="{% url 'checkout' %}" class="btn btn-green">
+        <span class="text-uppercase">Secure Checkout</span>
+        <span class="icon">
+            <i class="fas fa-lock"></i>
+        </span>
+    </a>
+</div>
