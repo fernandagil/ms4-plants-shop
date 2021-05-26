@@ -192,6 +192,7 @@ body {
 
 .header-style {
     background-color: #222;
+    height: 90px;
 }
 
 .navbar-item {
@@ -387,6 +388,7 @@ body {
     color: #FAFAFA;
     padding: 30px;
     margin-bottom: 0;
+    font-size: 1.1rem;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -976,7 +978,15 @@ a.category-link:focus {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    body {
+        font-size: 1.2rem;
+    }
     .container {
         max-width: 80%;
-      }
+    }
+    .jumbotron-div {
+        margin-top: 150px;
+        padding: 60px;
+        font-size: 2.5rem;
+    }
 }
