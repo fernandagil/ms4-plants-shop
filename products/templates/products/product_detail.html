@@ -13,6 +13,18 @@
     <div class="overlay"></div>
     <div class="container main-container">
         <div class="row">
+            <!-- back button -->
+            <div class="col-12">
+                <div class="col-12 text-left">
+                    <a href="{% url 'products' %}" class="btn mt-5 btn-grey">	
+                        <span class="icon">	
+                            <i class="fas fa-chevron-left"></i>	
+                        </span>	
+                        <span class="text-uppercase">Keep Shopping</span>	
+                    </a>
+                </div>
+            </div>
+
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container mt-5">
 
@@ -32,24 +44,20 @@
                     {% else %}
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}
-
-                    <div class="row mb-4">
-                        
-                        <div class="col-12">
-                            <!-- wishlist -->
-                            <form class="form" method="POST" action="{% url 'add_to_wishlist' product.id %}">
-                                {% csrf_token %}
-                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                <button class="btn btn-grey mt-4 text-uppercase">
-                                    <small>Add to wishlist
-                                        <span class="icon d-inline-block">	
-                                            <i class="fas fa-heart"></i>	
-                                        </span>	
-                                    </small>
-                                </button>
-                            </form>
-                        </div>
-                        
+ 
+                    <div class="col-12 text-center">
+                        <!-- wishlist -->
+                        <form class="form" method="POST" action="{% url 'add_to_wishlist' product.id %}">
+                            {% csrf_token %}
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            <button class="btn btn-grey mt-3 text-uppercase">
+                                <small>Add to wishlist
+                                    <span class="icon d-inline-block">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                </small>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -82,7 +90,7 @@
                         {% csrf_token %}	
                         <div class="form-row">	
                             <div class="col-12">	
-                                <p class="mt-3 d-inline-block mr-4"><strong>Quantity:</strong></p>	
+                                <p class="mt-3 d-inline-block mr-3"><strong>Quantity:</strong></p>	
                                 <div class="form-group d-inline-block">	
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -123,10 +131,10 @@
 
                 {% if product.light %}
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-3">
                             <h6 class="care-header my-3">Light</h6>
                         </div>
-                        <div class="col-12 col-md-8 pl-md-3">
+                        <div class="col-12 col-md-9 pl-md-3">
                             <p class="mb-4"><small>{{ product.light }}</small></p>
                         </div>
                     </div>
@@ -134,10 +142,10 @@
 
                 {% if product.water %}
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-3">
                             <h6 class="care-header my-3">Water</h6>
                         </div>
-                        <div class="col-12 col-md-8 pl-md-3">
+                        <div class="col-12 col-md-9 pl-md-3">
                             <p class="mb-4"><small>{{ product.water }}</small></p>
                         </div>
                     </div>
@@ -145,10 +153,10 @@
 
                 {% if product.soil %}
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-3">
                             <h6 class="care-header my-3">Soil</h6>
                         </div>
-                        <div class="col-12 col-md-8 pl-md-3">
+                        <div class="col-12 col-md-9 pl-md-3">
                             <p class="mb-4"><small>{{ product.soil }}</small></p>
                         </div>
                     </div>
@@ -156,10 +164,10 @@
 
                 {% if product.temperature %}
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-3">
                             <h6 class="care-header my-3">Temperature</h6>
                         </div>
-                        <div class="col-12 col-md-8 pl-md-3">
+                        <div class="col-12 col-md-9 pl-md-3">
                             <p class="mb-4"><small>{{ product.temperature }}</small></p>
                         </div>
                     </div>
@@ -173,18 +181,6 @@
                     </div>
                 {% endif %}
 
-            </div>
-        </div>
-
-        <!-- back button -->
-        <div class="row my-3">
-            <div class="col-12 text-left">
-                <a href="{% url 'products' %}" class="btn mt-5 btn-grey">	
-                    <span class="icon">	
-                        <i class="fas fa-chevron-left"></i>	
-                    </span>	
-                    <span class="text-uppercase">Keep Shopping</span>	
-                </a>
             </div>
         </div>
 
