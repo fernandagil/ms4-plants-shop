@@ -11,17 +11,17 @@
 <span id="#1"></span>
 ## 1. Code validators
 
-### [HTML Validator](https://validator.w3.org/) : 
+### [HTML Validator](https://validator.w3.org/): 
 
 
 
-### [CSS Validator](https://jigsaw.w3.org/css-validator/) : 
+### [CSS Validator](https://jigsaw.w3.org/css-validator/): 
 
 
-#### [JSHint JavaScript Validator](https://jshint.com/) :
+### [JSHint JavaScript Validator](https://jshint.com/):
 
 
-### [PEP8 Python Validator](http://pep8online.com/) : 
+### [PEP8 Python Validator](http://pep8online.com/): 
 
 
 ---
