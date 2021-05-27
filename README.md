@@ -36,15 +36,16 @@ Another main goal is to provide the users with a blog to keep them informed with
 ##### Viewing and Navigation
 - As a shopper, I want to be able to view a list of products so that I can select some to purchase
 - As a shopper, I want to be able to view individual product details so that I can identify the price, description and product image
-- As a shopper, I want to be able to quickly identify special offers so that I can take advantage of special savings on products I'd like to purchase
 - As a shopper, I want to be able to easily view the total of my purchases at anytime so that I can avoid spending too much
+- As a shopper, I want to be able to read more about plants so that I can learn a few tips about how to take better care of them
 
 ##### Registration and User Account
 - As a site user, I want to be able to easily register for an account so that I can have a personal account and be able to view my profile
 - As a site user, I want to be able to easily login or logout so that I can access my personal account information
 - As a site user, I want to be able to easily recover my password in case I forget it so that I can recover access to my account
 - As a site user, I want to be able to receive an email confirmation after registering so that I can verify that my account registration was successful
-- As a site user, I want to be able to have a personalized user profile so that I can view my personal order history and order confirmation, save my payment information and see the products I saved in my favourites listx
+- As a site user, I want to be able to have a personalized user profile so that I can view my personal order history and order confirmation, save my payment information and see the products I saved in my favourites list
+- As a site user, I want to be able to save products in my wishlist so that I can revisit them if I want to buy them later
 
 ##### Sorting and Searching
 - As a shopper, I want to be able to sort the list of available products so that I can easily identify the best priced and categorically sorted products
@@ -63,9 +64,9 @@ Another main goal is to provide the users with a blog to keep them informed with
 - As a shopper, I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records
 
 ##### Admin and Store Management
-- As a shopper, I want to be able to add a product so that I can add new items to my store
-- As a shopper, I want to be able to edit/update a product so that I can change product prices, descriptions, images and other product criteria
-- As a shopper, I want to be able to delete a product so that I can remove items that are no longer for sale
+- As a store owner, I want to be able to add a product so that I can add new items to my store
+- As a store owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images and other product criteria
+- As a store owner, I want to be able to delete a product so that I can remove items that are no longer for sale
 
 
 <span id="1-UX-3"></span>
