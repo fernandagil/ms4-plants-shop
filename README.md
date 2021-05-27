@@ -181,22 +181,8 @@ Restricted to Superusers
 <span id="4-TEST"></span>
 ## 4. Testing
 
-BUGS
+The testing process can be seen [here](TESTING.md).
 
-- NoReverseMatch - When creating the edit blog functionality, a NoReverseMatch error was showing when attempting to go to the main blog page. 
-    - Because I was using the same url in both the main blog page and the individual post page, I didn't realize that in the main blog page, the edit button was inside a for loop where the object was called 'post' and not 'blog' like it was called in the views.py file, so I just had to change 'blog' for 'post' and it worked properly.
-
-- TypeError: 'AnonymousUser' object is not iterable - When a non logged in user tried to purchase an item (or many), they would get an error when clicking 'Complete order' in the checkout page. 
-  - This was fixed adding an if statement that would check if hte user is authenticated just before saving the order's information in the views.py file in the checkout app.
-
-- Modal deleting wrong product id.
-To add security and avoid users (superusers) clicking the delete button by mistake, I decided to add a modal. This modal didn't delete the item I clicked on but it picked the first product 
-- With help from the CI tutors we found out that when a modal with a variable ID is used (meaning there are multiple products on the page), it tends to pick the first one. So to fix this we decided to make the ID dynamic and its match on the button
-
-* The same issue occured with the modal I developed to delete a blog post in the blogs page, and this was fixed the same way
-
-
- 
 ---
  
 <span id="5-DEPL"></span>
