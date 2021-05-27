@@ -1,5 +1,5 @@
 <!-- menu -->
-<div class="col-4 my-auto py-1 float-left">
+<div class="col-3 my-auto py-1 float-left">
     <span onclick="openMobileNav()" class="dropdown-item mobile-dropdown text-left"><i class="fas fa-bars fa-lg navbar-item"></i></span>
 
     <div id="myMobileNav" class="mobilenav text-center">
@@ -73,14 +73,14 @@
 </div>
 
 <!-- logo -->
-<div class="col-4 my-auto py-1 text-center align-self-center">
+<div class="col-6 my-auto py-1 text-center align-self-center">
     <a href="{% url 'home' %}" class="nav-link main-logo-link">
         <img src="{{ MEDIA_URL }}logo.jpg" alt="Plantas&co. Shop">
     </a>
 </div>
 
 <!-- basket -->
-<div class="col-4 my-auto py-1 float-right">
+<div class="col-3 my-auto py-1 float-right">
     <span class="dropdown-item mobile-dropdown text-right">
         <a class="{% if grand_total %}text-info {% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
             <div class="navbar-item basket-el d-none">

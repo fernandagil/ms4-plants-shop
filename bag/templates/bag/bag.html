@@ -36,7 +36,7 @@
                                     <div class="col-4 col-sm-6 image-mobile-div align-self-center">
                                         {% include "bag/product-image.html" %}
                                     </div>
-                                    <div class="col-8 col-sm-6">
+                                    <div class="col-8 col-sm-6 pl-0">
                                         {% include "bag/quantity-form.html" %}
                                         <a class="update-link d-inline-block float-right">Update</a>
                                         <p class="my-2 d-inline-block">Subtotal: ${{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -51,7 +51,7 @@
                         </div>
                         <hr class="bag-hr">
 
-                        <div class="col-12 checkout-buttons">
+                        <div class="col-12 checkout-buttons p-0">
                             {% include "bag/checkout-buttons.html" %}
                         </div>
                     </div>

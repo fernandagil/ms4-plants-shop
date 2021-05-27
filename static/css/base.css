@@ -928,6 +928,9 @@ a.category-link:focus {
     .footer-logo-link img {
         max-width: 240px;
     }
+    .header-style {
+        height: 60px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
