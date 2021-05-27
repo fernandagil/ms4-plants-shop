@@ -747,6 +747,7 @@ a.category-link:focus {
 .allauth-form-inner-content input {
     border-color: #222;
     border-radius: 0;
+    width: 100%;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
