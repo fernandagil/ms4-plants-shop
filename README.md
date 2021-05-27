@@ -206,14 +206,24 @@ BUGS
 - This project was developed following the Boutique Ado project tutorial from [Code Institute](https://codeinstitute.net/). The code was adapted to fit the purpose of this project.
 - The code to create the side navbar menu functionality is from [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 - The code to style the blog posts is from [W3Schools](https://www.w3schools.com/howto/howto_css_image_text.asp)
+- I got inspiration from [KeisGSmit](https://github.com/KeisGSmit/Gymshop) to create the Wishlist app
 
 ### 6.2 Content
 
-- The posts in the blog app are originally from this article in [modsy.com](https://blog.modsy.com/home-design-tips-guides/tips-guides/indoor-plants-care/)
+- The posts in the blog app are originally from this article in [modsy.com](https://blog.modsy.com/home-design-tips-guides/tips-guides/indoor-plants-care/) and also from [hunker.com](https://www.hunker.com/13411862/how-to-care-for-dried-flowers)
+- The text talking about the company values in the home page is originally from [thesill.com](https://www.thesill.com/)
 - The information about the plants and how to take care of them was obtained from the following sources:
     - https://gardeningit.com/
     - https://www.thespruce.com/
     - https://www.houseplantsexpert.com/
+    - https://www.evergreenseeds.com/
+    - https://feey.ch/
+    - https://www.leafyplace.com/
+    - https://succulentcareguide.com/
+    - https://theyardandgarden.com/
+    - https://sproutingindoors.com/
+DISCLAIMER:
+Although deep research has been made to provide an accourate description and real useful information about the type of plants and how to take care of them, this could still not be 100% true in some cases.
 
 ### 6.3 Media
 
