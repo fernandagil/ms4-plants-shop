@@ -165,8 +165,6 @@ Restricted to Superusers
 
 
 
-
-
  
 <span id="2-FEAT-2"></span>
 ### 2.2 Potential Features
@@ -176,6 +174,45 @@ Restricted to Superusers
 
 <span id="3-TECH"></span>
 ## 3. Technologies Used
+
+#### Languages
+- [HTML5](https://html.com/) provides the content and structure for the project.
+- [CSS3](http://www.css3.info/) provides the styling.
+- [JavaScript](https://www.javascript.com/) provides the functionality and interaction.
+- [Python3](https://www.python.org/) provides the backend for the project.
+
+#### Frameworks & Libraries
+- [Bootstrap](https://getbootstrap.com/) is used to create the layout of the project and some styling.
+- [Django](https://www.djangoproject.com/) is used to get a rapid development and a clean, pragmatic design.
+- [PostgresSQL](https://www.postgresql.org/) is the database used to store all the models in the production environment. 
+- [SQLite](https://sqlite.org/index.html) is used as the database in the development environment.
+- [AWS](https://aws.amazon.com/) is used to host media and static files on the cloud.
+- [Stripe](https://stripe.com/) is used for payment handling.
+- [Google Fonts](https://fonts.google.com/) is used to provide the fonts: Raleway and Playfair Display.
+- [Font Awesome](https://fontawesome.com/) is used to provide some icons.
+
+#### Project Management
+- [Git](https://git-scm.com/) is used for version control.
+- [GitHub](https://github.com/) is used to host the project.
+- [Heroku](https://www.heroku.com/) is used to deploy the app.
+- [Gitpod](https://gitpod.io/) was used to develop the website.
+
+#### Design
+- [Balsamiq](https://balsamiq.com/) was used to create the project's wireframes.
+- [Diagrams](https://www.diagrams.net/) was used to create the database design.
+- [Unsplash](https://unsplash.com/) was used to get images for the project.
+- [Canva](https://www.canva.com/) was used to create the shop's icon.
+- [HTML Color Codes](https://html-color-codes.info/) was used to select colours codes from an image to create the website's colour palette.
+- [TinyJPG](https://tinyjpg.com/) was used to compress the size of some images.
+
+#### Testing
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to test the responsiveness of the site.
+- [Am I Responsive?](http://ami.responsivedesign.is/) was used to test the responsiveness of the site.
+- [Autoprefixer](https://autoprefixer.github.io/) was used to parsethe CSS and to add vendor prefixes to CSS rules.
+- [W3C HTML Validator](https://validator.w3.org/) was used to check the HTML code for any errors.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS code for any errors.
+- [JS Hint](https://jshint.com/) was used to check the JavaScript code for any errors.
+- [PEP8](http://pep8online.com/) was used to check the Python code for any errors.
 
 ---
  
