@@ -1,5 +1,5 @@
 # Plantas&co. Shop
-![Plantas&co. Shop]()
+![Plantas&co. Shop](readme-files/amiresponsive.jpg)
 Plantas&co. is a fictitious online shop that sells all kinds of indoor plants, but also dry flowers bouquets. 
 Besides shopping, users of Plantas&co. will find a blog where both beginners and expers can find some useful tips on how to take care of their plants.
 
@@ -68,7 +68,6 @@ Another main goal is to provide the users with a blog to keep them informed with
 - As a store owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images and other product criteria
 - As a store owner, I want to be able to delete a product so that I can remove items that are no longer for sale
 
-
 <span id="1-UX-3"></span>
 ### 1.3 Design Choices
 
@@ -94,6 +93,19 @@ To give the project a clean look, the main colors chosen were off-black and off-
 <span id="1-UX-5"></span>
 ### 1.5 Wireframes
 
+The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're accessible in the following links:
+ 
+|    Home Page    |    Products Page    |    Product Detail Page    |    Add/Edit Product Page    |
+|    :----:    |    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-home.jpg)|![](wireframes/wf-products.jpg)|![](wireframes/wf-product-det.jpg)|![](wireframes/)|
+
+|    Bag Page    |    Checkout Page    |    Checkout Success Page    |    Profile Page    |
+|    :----:    |    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-bag.jpg)|![](wireframes/)|![](wireframes/)|![](wireframes/wf-profile.jpg)|
+
+|    Blog Page    |    Blog Post Page    |    Add/Edit Blog Post Page    |    Wishlist Page    |
+|    :----:    |    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-blog.jpg)|![](wireframes/wf-blog-post.jpg)|![](wireframes/)|![](wireframes/wf-wishlist.jpg)|
 
 ---
 
