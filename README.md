@@ -95,17 +95,21 @@ To give the project a clean look, the main colors chosen were off-black and off-
 
 The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're accessible in the following links:
  
-|    Home Page    |    Products Page    |    Product Detail Page    |    Add/Edit Product Page    |
-|    :----:    |    :----:    |    :----:    |    :----:    |
-|![](wireframes/wf-home.jpg)|![](wireframes/wf-products.jpg)|![](wireframes/wf-product-det.jpg)|![](wireframes/)|
+|    Home Page    |    Profile Page    |    Wishlist Page    |
+|    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-home.jpg)|![](wireframes/wf-profile.jpg)|![](wireframes/wf-wishlist.jpg)|
 
-|    Bag Page    |    Checkout Page    |    Checkout Success Page    |    Profile Page    |
-|    :----:    |    :----:    |    :----:    |    :----:    |
-|![](wireframes/wf-bag.jpg)|![](wireframes/)|![](wireframes/)|![](wireframes/wf-profile.jpg)|
+|    Products Page    |    Product Detail Page    |    Add/Edit Product Page    |
+|    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-products.jpg)|![](wireframes/wf-product-det.jpg)|![](wireframes/wf-add-edit-prod.jpg)|
 
-|    Blog Page    |    Blog Post Page    |    Add/Edit Blog Post Page    |    Wishlist Page    |
-|    :----:    |    :----:    |    :----:    |    :----:    |
-|![](wireframes/wf-blog.jpg)|![](wireframes/wf-blog-post.jpg)|![](wireframes/)|![](wireframes/wf-wishlist.jpg)|
+|    Bag Page    |    Checkout Page    |    Checkout Success Page    |
+|    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-bag.jpg)|![](wireframes/wf-checkout.jpg)|![](wireframes/wf-checkout-suc.jpg)|
+
+|    Blog Page    |    Blog Post Page    |    Add/Edit Blog Post Page    |
+|    :----:    |    :----:    |    :----:    |
+|![](wireframes/wf-blog.jpg)|![](wireframes/wf-blog-post.jpg)|![](wireframes/wf-add-edit-blog.jpg)|
 
 ---
 
