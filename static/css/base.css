@@ -670,6 +670,12 @@ a.category-link:focus {
     max-height: 150px;
 }
 
+/* ------------------------------------------------------------ PROFILE PAGE */
+
+.order-number a {
+    color: #FAFAFA;
+}
+
 /* ----------------------------------------------------------- WISHLIST PAGE */
 
 .wishlist-container {
