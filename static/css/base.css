@@ -555,8 +555,24 @@ body {
 
 .card {
     border-radius: 0;
+    background: #FAFAFA;
+}
+
+.card-body {
+    min-height: fit-content;
     background: #222;
     color: #FAFAFA;
+}
+
+.card-footer {
+    border-top: 0;
+    background: #222;
+    color: #FAFAFA;
+}
+
+.card-footer p {
+    padding-bottom: .75rem;
+    letter-spacing: 2px;
 }
 
 .card-img {
@@ -574,15 +590,6 @@ body {
 .product-name:focus {
     color: #9FBBAF;
     text-decoration: none;
-}
-
-.card-footer {
-    border-top: 0;
-}
-
-.card-footer p {
-    padding-bottom: .75rem;
-    letter-spacing: 2px;
 }
 
 a.category-link {
@@ -1018,5 +1025,26 @@ a.category-link:focus {
         margin-top: 150px;
         padding: 60px;
         font-size: 2.5rem;
+    }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media only screen and (min-width: 1400px) {
+    body {
+        font-size: 1.3rem;
+    }
+    .container {
+        max-width: 70%;
+    }
+    .jumbotron-div {
+        margin-top: 250px;
+        padding: 60px;
+        font-size: 2.5rem;
+    }
+    .header-container {
+        padding-top: 140px;
+    }
+    .card {
+        margin: 1rem 2rem;
     }
 }
