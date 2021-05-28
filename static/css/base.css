@@ -36,6 +36,10 @@ body {
     border: 1px solid #222 !important;
 }
 
+.hr-white {
+    border-top: 1px solid #FAFAFA;
+}
+
 /* ----------------------------------------------------------------- BUTTONS */
 
 .shop-now-btn {
@@ -670,7 +674,7 @@ a.category-link:focus {
 
 .wishlist-container {
     padding: 10px 50px;
-    margin: 5px 40px;
+    margin: 0 40px;
     border-radius: 0;
     color: #FAFAFA;
     background: #222;
