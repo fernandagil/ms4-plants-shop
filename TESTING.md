@@ -35,6 +35,7 @@ I also asked some family members and friends to test it on their devices.
 
 <span id="#3"></span>
 ## 3. Browser compatibility
+![](readme-files/browser-comp.png)
 
 ---
 
