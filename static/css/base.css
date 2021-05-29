@@ -275,10 +275,6 @@ body {
     max-width: 200px;
 }
 
-.closebtn {
-
-}
-
 /* --------------------------------------------------------------- SHOP MENU */
 /* from w3schools */
 
@@ -507,7 +503,6 @@ body {
     text-decoration: none;
 }
 
-
 /* ------------------------------------------------------------ PRODUCTS PAGE */
 
 .overlay {
@@ -602,7 +597,6 @@ a.category-link:active,
 a.category-link:focus {
     color: #4D6A61;
     text-decoration: none;
-
 }
 
 .back-top-link {
@@ -712,7 +706,6 @@ a.category-link:focus {
 
 .toast {
     background-color: transparent;
-    backdrop-filter: none;
 }
 
 .toast-header {
@@ -756,6 +749,7 @@ a.category-link:focus {
 }
 
 /* ----------------------------------------------------------- ALLAUTH FORMS */
+
 .account-container {
     padding-top: 164px;
     min-height: 90vh;
@@ -889,7 +883,7 @@ a.category-link:focus {
     margin: 20px 0;
 }
 
-/* -------------------------------- Media Queries */
+/* ----------------------------------------------------------- MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

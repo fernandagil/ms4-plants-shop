@@ -12,11 +12,27 @@
 ## 1. Code validators
 
 ### [HTML Validator](https://validator.w3.org/): 
+The HTML validator was used on every html file in the project. It mainly returned Django related errors that were ignored. Some examples below:
+![](readme-files/html-django.png)
 
-
+This test also returned some other non Django related errors. These were all fixed accordingly.
+![](readme-files/html-1.png)
+![](readme-files/html-2.png)
 
 ### [CSS Validator](https://jigsaw.w3.org/css-validator/): 
+The CSS validator was used on the following files:
+- base.css
+- checkout.css
+- profile.css
 
+The test returned no warnings in checkout.css and profile.css. However, the test returned two type of warnings in the base.css file:
+- related to the buttons colours and borders. These warnings were ignored since they were design choices and they don't affect any functionality of the code.
+- related to browser cross-compatibility. These warnings were also ignored in order to have the content render properly on every browser.
+![](readme-files/css-warnings.png)
+
+
+The test returned no errors in any of the files
+![](readme-files/css-error.png)
 
 ### [JSHint JavaScript Validator](https://jshint.com/):
 
@@ -56,9 +72,9 @@ I also asked some family members and friends to test it on their devices.
 
 - Modal deleting wrong product id.
 To add security and avoid users (superusers) clicking the delete button by mistake, I decided to add a modal. This modal didn't delete the item I clicked on but it picked the first product 
-- With help from the CI tutors we found out that when a modal with a variable ID is used (meaning there are multiple products on the page), it tends to pick the first one. So to fix this we decided to make the ID dynamic and its match on the button
+  - With help from the CI tutors we found out that when a modal with a variable ID is used (meaning there are multiple products on the page), it tends to pick the first one. So to fix this we decided to make the ID dynamic and its match on the button
 
-* The same issue occured with the modal I developed to delete a blog post in the blogs page, and this was fixed the same way
+The same issue occured with the modal I developed to delete a blog post in the blogs page, and this was fixed the same way
 
 ---
 
