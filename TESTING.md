@@ -35,7 +35,8 @@ The test returned no errors in any of the files
 ![](readme-files/css-error.png)
 
 ### [JSHint JavaScript Validator](https://jshint.com/):
-
+The JavaScript validator was used on all JS files and JavaScript code snippets in the project. 
+The test returned no errors, just a few recommendations about missing semicolons that were fixed.
 
 ### [PEP8 Python Validator](http://pep8online.com/): 
 
@@ -75,6 +76,13 @@ To add security and avoid users (superusers) clicking the delete button by mista
   - With help from the CI tutors we found out that when a modal with a variable ID is used (meaning there are multiple products on the page), it tends to pick the first one. So to fix this we decided to make the ID dynamic and its match on the button
 
 The same issue occured with the modal I developed to delete a blog post in the blogs page, and this was fixed the same way
+
+### Bugs to fix
+A bug a couldn't fix before subission is the quantity button in the bag app that doesn't work properly in larger screen sizes. I used the same code snippet for both larger screen sizes and smaller screen sizes and while it works perfectly in the smaller versions, in the larger ones the user can press minus and go below zero. 
+This isn't a huge issue for the proper functionality of the page because when the user updates the product to be minus, the product will be simply deleted from the shopping bag.
+
+Another bug to fix in the future is the delivery info in the checkout app that saves even with check button unmarked.
+
 
 ---
 

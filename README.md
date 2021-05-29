@@ -199,6 +199,7 @@ Restricted to Superusers
 
 #### Frameworks & Libraries
 - [Bootstrap](https://getbootstrap.com/) is used to create the layout of the project and some styling.
+- [jQuery](https://jquery.com/) complements JavaScript.
 - [Django](https://www.djangoproject.com/) is used to get a rapid development and a clean, pragmatic design.
 - [PostgresSQL](https://www.postgresql.org/) is the database used to store all the models in the production environment. 
 - [SQLite](https://sqlite.org/index.html) is used as the database in the development environment.
