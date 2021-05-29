@@ -35,11 +35,17 @@ The test returned no errors in any of the files
 ![](readme-files/css-error.png)
 
 ### [JSHint JavaScript Validator](https://jshint.com/):
-The JavaScript validator was used on all JS files and JavaScript code snippets in the project. 
+The JavaScript validator was used on all .js files and JavaScript code snippets in the project. 
 The test returned no errors, just a few recommendations about missing semicolons that were fixed.
 
 ### [PEP8 Python Validator](http://pep8online.com/): 
+The PEP8 Python Validator along with the `python3 -m flake8` command were used on all .py files and some of those files returned a few formatting errors:
+- line too long
+- trailing whitespace
+- no newline at end of file
+- continuation line missing indentation or outdented
 
+Most of these formatting errors were fixed successfully.
 
 ---
 

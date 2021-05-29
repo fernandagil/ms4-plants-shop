@@ -45,9 +45,9 @@ def adjust_bag(request, item_id):
                          (f'Updated {product.name} '
                           f'quantity to {bag[item_id]}'))
     else:
-        bag.pop(item_id)	
-        messages.success(request,	
-                         (f'Removed {product.name} '	
+        bag.pop(item_id)
+        messages.success(request,
+                         (f'Removed {product.name}'
                           f'from your bag'))
 
     request.session['bag'] = bag

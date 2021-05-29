@@ -13,4 +13,5 @@ class BlogAdmin(admin.ModelAdmin):
 
     ordering = ['-date_created']
 
+
 admin.site.register(Blog, BlogAdmin)
