@@ -31,9 +31,7 @@
                 <div class="row mt-1 mb-2">
                     <div class="col-6">
                         <p class="text-muted mt-3 text-left">
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}" class="category-link">All Products</a> | {{ products|length }} Products</span>
-                            {% endif %}
+                            <span class="small"><a href="{% url 'products' %}" class="category-link">All Products</a> | {{ products|length }} Products</span>
                         </p>
                     </div>
                     <div class="col-6 my-auto order-md-last d-flex justify-content-end">
@@ -52,15 +50,15 @@
                 </div>
 
                 <!-- search results -->
-                <div class="row">
-                    <div class="col-12">
-                        <p class="mb-5">
-                            {% if search_term %} 
+                {% if search_term %} 
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-5">
                                 {{ products|length }} Productsfound for <strong>"{{ search_term }}"</strong>
-                            {% endif %}
-                        </p>
+                            </p>
+                        </div>
                     </div>
-                </div>
+                {% endif %}
 
                 <!-- products -->
                 <div class="row my-4">
