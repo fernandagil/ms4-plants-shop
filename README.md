@@ -80,7 +80,7 @@ Both fonts were imported from [Google Fonts](https://fonts.google.com/)
 **Colors**:
 To give the project a clean look, the main colors chosen were off-black and off-white, with two shades of blue-green to emphasize some areas like the shop now button.
 
-![colour palette](readme-files/color-palette.png)
+![](readme-files/color-palette.png)
 
 **Images**:
 
@@ -89,6 +89,8 @@ To give the project a clean look, the main colors chosen were off-black and off-
 
 <span id="1-UX-4"></span>
 ### 1.4 Database Design
+
+![](readme-files/database.png)
 
 <span id="1-UX-5"></span>
 ### 1.5 Wireframes

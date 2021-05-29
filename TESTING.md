@@ -47,6 +47,8 @@ The PEP8 Python Validator along with the `python3 -m flake8` command were used o
 
 Most of these formatting errors were fixed successfully.
 
+Some other warnings related to automatically generated files (such as migrations) were ignored since automatically generated files may intentionally ignore style rules for efficiency reasons and because developers usually don't need to touch them, so they don't need to be perfectly readable.
+
 ---
 
 <span id="#2"></span>
