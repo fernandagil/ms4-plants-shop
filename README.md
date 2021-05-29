@@ -1,7 +1,7 @@
 # Plantas&co. Shop
 ![Plantas&co. Shop](readme-files/amiresponsive.jpg)
 Plantas&co. is a fictitious online shop that sells all kinds of indoor plants, but also dry flowers bouquets. 
-Besides shopping, users of Plantas&co. will find a blog where both beginners and expers can find some useful tips on how to take care of their plants.
+Besides shopping, users of Plantas&co. will find a blog where both beginners and experts can find some useful tips on how to take care of their plants.
 
 ---
 #### CONTENT
@@ -84,7 +84,7 @@ To give the project a clean look, the main colors chosen were off-black and off-
 
 **Images**:
 
-- The images used for the main page, blog and background were selected to provide the website with a 'real' plants shop appearence. These belong to [Ceyda Çiftci](https://unsplash.com/@ceydaciftci) in [Unsplash](https://unsplash.com/)
+- The images used for the main page, blog and background were selected to provide the website with a 'real' plants shop appearance. These belong to [Ceyda Çiftci](https://unsplash.com/@ceydaciftci) in [Unsplash](https://unsplash.com/)
 - All the images used as product images belong to [Severin Candrian](https://unsplash.com/@feeypflanzen) in [Unsplash](https://unsplash.com/)
 
 <span id="1-UX-4"></span>
@@ -120,7 +120,7 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 ### 2.1 Existing Features
  
 **Site wide**:
-- **Navbar**: gives consistency and allow users to navigate the site in an easy and intuitive way. There are two versions of it: one for larger screen sizes and one for smaller screen sizes. Both of them include the same features:
+- **Navbar**: gives consistency and allows users to navigate the site in an easy and intuitive way. There are two versions of it: one for larger screen sizes and one for smaller screen sizes. Both of them include the same features:
 
   - **Home Button**: allows users to go back to the Home page from any part of the page
   - **Shop Button**: opens a side menu in larger screen sizes and a dropdown in mobile that allows users to go to the 'All Products' page and to the main categories: Indoor Greenery, Cacti and Dry Flowers
@@ -200,7 +200,7 @@ Restricted to Superusers
 #### Frameworks & Libraries
 - [Bootstrap](https://getbootstrap.com/) is used to create the layout of the project and some styling.
 - [jQuery](https://jquery.com/) complements JavaScript.
-- [Django](https://www.djangoproject.com/) is used to get a rapid development and a clean, pragmatic design.
+- [Django](https://www.djangoproject.com/) is used to get rapid development and a clean, pragmatic design.
 - [PostgresSQL](https://www.postgresql.org/) is the database used to store all the models in the production environment. 
 - [SQLite](https://sqlite.org/index.html) is used as the database in the development environment.
 - [AWS](https://aws.amazon.com/) is used to host media and static files on the cloud.
@@ -219,7 +219,7 @@ Restricted to Superusers
 - [Diagrams](https://www.diagrams.net/) was used to create the database design.
 - [Unsplash](https://unsplash.com/) was used to get images for the project.
 - [Canva](https://www.canva.com/) was used to create the shop's icon.
-- [HTML Color Codes](https://html-color-codes.info/) was used to select colours codes from an image to create the website's colour palette.
+- [HTML Color Codes](https://html-color-codes.info/) was used to select colour codes from an image to create the website's colour palette.
 - [TinyJPG](https://tinyjpg.com/) was used to compress the size of some images.
 
 #### Testing
@@ -250,7 +250,7 @@ The testing process can be seen [here](TESTING.md).
 - Gmail account
 
 #### Hosting static and media files with AWS
-This project usses AWS S3 bucket to host the static and media files. To host them you will need an account and create an S3 bucket and set a group, policy and user in the IAM environment. 
+This project uses AWS S3 bucket to host the static and media files. To host them you will need an account and create an S3 bucket and set a group, policy and user in the IAM environment. 
  
 ### 5.1 Heroku deployment
 
@@ -305,10 +305,10 @@ This website is deployed on [Heroku](https://www.heroku.com/). Heroku needs some
     - `python3 manage.py loaddata categories`
     - `python3 manage.py loaddata products`
     Remember to add *categories* before adding *products*
-  - Create a superuser. The superuser has acces to the admin environment
+  - Create a superuser. The superuser has access to the admin environment
     - `python3 manage.py createsuperuser`
     - Enter your username, email and password
-  - Now you can remove the DATABASE_URL from `settings.py` and set the 'old' default DATABSE settings
+  - Now you can remove the DATABASE_URL from `settings.py` and set the 'old' default DATABASE settings
   - Adjust the ALLOWED_HOSTS in you settings.py with the following:
     
     ```
@@ -355,13 +355,13 @@ This website is deployed on [Heroku](https://www.heroku.com/). Heroku needs some
   - `python3 manage.py loaddata products`
   Remember to add *categories* before adding *products*
 
-7. Create a superuser to acces to the admin environment
+7. Create a superuser to access to the admin environment
   - `python3 manage.py createsuperuser`
   - Enter your username, email and password
 
 8. To run the app: open your terminal window in your IDE and type: `python3 manage.py runserver`
 
-9. To acces the admin environment, you can add `/admin` at the end of your url and log in with the superuser
+9. To access the admin environment, you can add `/admin` at the end of your url and log in with the superuser
 
 ---
  
@@ -391,7 +391,7 @@ This website is deployed on [Heroku](https://www.heroku.com/). Heroku needs some
     - https://theyardandgarden.com/
     - https://sproutingindoors.com/
 DISCLAIMER:
-Although deep research has been made to provide an accourate description and real useful information about the type of plants and how to take care of them, this could still not be 100% true in some cases.
+Although deep research has been made to provide an accurate description and real useful information about the type of plants and how to take care of them, this could still not be 100% true in some cases.
 
 ### 6.3 Media
 

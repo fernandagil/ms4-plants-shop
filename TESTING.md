@@ -26,7 +26,7 @@ The CSS validator was used on the following files:
 - profile.css
 
 The test returned no warnings in checkout.css and profile.css. However, the test returned two type of warnings in the base.css file:
-- related to the buttons colours and borders. These warnings were ignored since they were design choices and they don't affect any functionality of the code.
+- related to the buttons' colours and borders. These warnings were ignored since they were design choices and they don't affect any functionality of the code.
 - related to browser cross-compatibility. These warnings were also ignored in order to have the content render properly on every browser.
 ![](readme-files/css-warnings.png)
 
@@ -75,20 +75,19 @@ I also asked some family members and friends to test it on their devices.
     - Because I was using the same url in both the main blog page and the individual post page, I didn't realize that in the main blog page, the edit button was inside a for loop where the object was called 'post' and not 'blog' like it was called in the views.py file, so I just had to change 'blog' for 'post' and it worked properly.
 
 - TypeError: 'AnonymousUser' object is not iterable - When a non logged in user tried to purchase an item (or many), they would get an error when clicking 'Complete order' in the checkout page. 
-  - This was fixed adding an if statement that would check if hte user is authenticated just before saving the order's information in the views.py file in the checkout app.
+  - This was fixed by adding an if statement that would check if the user is authenticated just before saving the order's information in the views.py file in the checkout app.
 
 - Modal deleting wrong product id.
 To add security and avoid users (superusers) clicking the delete button by mistake, I decided to add a modal. This modal didn't delete the item I clicked on but it picked the first product 
   - With help from the CI tutors we found out that when a modal with a variable ID is used (meaning there are multiple products on the page), it tends to pick the first one. So to fix this we decided to make the ID dynamic and its match on the button
 
-The same issue occured with the modal I developed to delete a blog post in the blogs page, and this was fixed the same way
+The same issue occurred with the modal I developed to delete a blog post in the blogs page, and this was fixed the same way
 
 ### Bugs to fix
-A bug a couldn't fix before subission is the quantity button in the bag app that doesn't work properly in larger screen sizes. I used the same code snippet for both larger screen sizes and smaller screen sizes and while it works perfectly in the smaller versions, in the larger ones the user can press minus and go below zero. 
+A bug I couldn't fix before submission is the quantity button in the bag app that doesn't work properly in larger screen sizes. I used the same code snippet for both larger screen sizes and smaller screen sizes and while it works perfectly in the smaller versions, in the larger ones the user can press minus and go below zero. 
 This isn't a huge issue for the proper functionality of the page because when the user updates the product to be minus, the product will be simply deleted from the shopping bag.
 
-Another bug to fix in the future is the delivery info in the checkout app that saves even with check button unmarked.
-
+Another bug to fix in the future is the delivery info in the checkout app that saves even with the check button unmarked.
 
 ---
 
