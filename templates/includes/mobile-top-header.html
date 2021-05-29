@@ -81,16 +81,9 @@
 
 <!-- basket -->
 <div class="col-3 my-auto py-1 float-right">
-    <span class="dropdown-item mobile-dropdown text-right">
+    <div class="dropdown-item mobile-dropdown text-right">
         <a class="{% if grand_total %}text-info {% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-            <div class="navbar-item basket-el d-none">
-                {% if grand_total %}
-                ${{ grand_total|floatformat:2 }}
-                {% else %}
-                $0.00
-                {% endif %}
-            </div>
             <i class="fas fa-shopping-bag fa-lg navbar-item basket-el"></i>
         </a>
-    </span>
+    </div>
 </div>
