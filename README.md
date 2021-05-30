@@ -5,6 +5,7 @@ Besides shopping, users of Plantas&co. will find a blog where both beginners and
 
 When testing this application, please use the Stripe test card number:
 - 4242 4242 4242 4242 
+
 You can use any 3 digit CVV and any future date.
 To get other results you can use different [test card numbers](https://stripe.com/docs/testing#cards)
 
