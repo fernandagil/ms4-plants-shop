@@ -916,10 +916,10 @@ a.category-link:focus {
     }
     .wishlist-container {
         padding: 10px 2px;
-        margin: 5px 0;
+        margin: 0;
     }
     .wishlist-img-div img {
-        max-height: 100px;
+        max-height: 90px;
     }
     .wishlist-col {
         padding: 2px;
