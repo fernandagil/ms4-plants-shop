@@ -32,15 +32,17 @@
                                 <div class="col-12 col-sm-6 mb-3">
                                     {% include "bag/product-info.html" %}
                                 </div>
-                                <div class="row">
-                                    <div class="col-4 col-sm-6 image-mobile-div align-self-center">
-                                        {% include "bag/product-image.html" %}
-                                    </div>
-                                    <div class="col-8 col-sm-6 pl-0">
-                                        {% include "bag/quantity-form.html" %}
-                                        <a class="update-link d-inline-block float-right">Update</a>
-                                        <p class="my-2 d-inline-block">Subtotal: ${{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                        <a class="remove-item d-inline-block float-right" id="remove_{{ item.item_id }}">Remove</a>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-4 col-sm-6 image-mobile-div align-self-center">
+                                            {% include "bag/product-image.html" %}
+                                        </div>
+                                        <div class="col-8 col-sm-6 pl-0">
+                                            {% include "bag/quantity-form.html" %}
+                                            <a class="update-link d-inline-block float-right">Update</a>
+                                            <p class="my-2 d-inline-block">Subtotal: ${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                            <a class="remove-item d-inline-block float-right" id="remove_{{ item.item_id }}">Remove</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
