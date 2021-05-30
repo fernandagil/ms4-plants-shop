@@ -120,12 +120,10 @@ WSGI_APPLICATION = 'plants_shop.wsgi.application'
 
 
 if 'DATABASE_URL' in os.environ:
-    print("loading postgres db")
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
-    print("in local db")
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
