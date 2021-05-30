@@ -230,6 +230,9 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 
 **Edit Blog Post Page**
   - **Edit Blog Post form**: allows the superuser to update a post in the blog
+
+**Error Pages**
+  - **400, 403, 404 and 500 Error Pages**: allow the user to know more about the error and allow them to navigate back to the page easily
  
 <span id="2-FEAT-2"></span>
 ### 2.2 Features left to implement in the future 
