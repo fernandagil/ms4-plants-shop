@@ -3,6 +3,11 @@
 Plantas&co. is a fictitious online shop that sells all kinds of indoor plants, but also dry flowers bouquets. 
 Besides shopping, users of Plantas&co. will find a blog where both beginners and experts can find some useful tips on how to take care of their plants.
 
+When testing this application, please use the Stripe test card number:
+- 4242 4242 4242 4242 
+You can use any 3 digit CVV and any future date.
+To get other results you can use different [test card numbers](https://stripe.com/docs/testing#cards)
+
 ---
 #### CONTENT
 - <a href="#1-UX">1. UX</a>
@@ -63,9 +68,11 @@ Another main goal is to provide the users with a blog to keep them informed with
 
 ##### Admin and Store Management
 - As a store owner, I want to be able to add a product so that I can add new items to my store
-- As a store owner, I want to be able to edit or delete a product so that I can change product prices, descriptions, images and other product criteria or remove items that are no longer for sale
-- As a store owner, I want to be able to add a post to the blog
-- As a store owner, I want to be able to edit or delete a blog post 
+- As a store owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images and other product criteria
+- As a store owner, I want to be able to delete a product so that I can remove items that are no longer for sale
+- As a store owner, I want to be able to add a post to the blog so the shop visitors can also read about plants and how to take care of them
+- As a store owner, I want to be able to edit/update a blog post
+- As a store owner, I want to be able to delete a blog post 
 
 <span id="1-UX-3"></span>
 ### 1.3 Design Choices
