@@ -55,6 +55,8 @@ Some other warnings related to automatically generated files (such as migrations
 ## 2. Responsiveness
 To test the responsiveness of the site I used [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 I also asked some family members and friends to test it on their devices.
+![](readme-files/responsiveness1.png)
+![](readme-files/responsiveness2.png)
 
 ---
 
