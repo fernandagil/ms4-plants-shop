@@ -13,7 +13,7 @@ Besides shopping, users of Plantas&co. will find a blog where both beginners and
   - <a href="#1-UX-5">1.5 Wireframes</a>
 - <a href="#2-FEAT">2. Features</a>
   - <a href="#2-FEAT-1">2.1 Existing Features</a>
-  - <a href="#2-FEAT-2">2.2 Potential Features</a>
+  - <a href="#2-FEAT-2">2.2 Features left to implement in the future</a>
 - <a href="#3-TECH">3. Technologies Used</a>
 - <a href="#4-TEST">4. Testing</a>
 - <a href="#5-DEPL">5. Deployment</a>
@@ -121,7 +121,7 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 <span id="2-FEAT-1"></span>
 ### 2.1 Existing Features
  
-**Site wide**:
+**Site wide**
 - **Navbar**: gives consistency and allows users to navigate the site in an easy and intuitive way. There are two versions of it: one for larger screen sizes and one for smaller screen sizes. Both of them include the same features:
 
   - **Home Button**: allows users to go back to the Home page from any part of the page
@@ -140,53 +140,103 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
   - **Logo**: reminds users where they are and to go back to the Home page from any part of the page.
   - **Follow Us**: allows users to view the shop's (fake) social accounts
 
-- **Home Page**: 
+**Home Page**
   - **Jumbotron**: works as a call to action and includes a button for the users to go directly to the All Products page
   - **Links to main categories**: allows users to access directly the category they are searching for: Indoor Plants, Dry Flowers and Cacti
   - **Blog Link**: informs the user that the shop also offers advice about plants and encourage them to visit the blog
   - **Shop values**: gives the users a quick glance about the shop's values
 
-- **Products Page**
+**Products Page**
+  - **Products Count**: shows the user how many products there are. If the user filters by category, it will show how many products there are in that specific category
+  - **Filtering**: allows the user to filter the products by price, name and category.
+  - **Product**: each product has an image, name and price so the user can quickly identify and find the product they're interested in. 
+  If the user is a superuser, they'll see an **Update button** and a **Delete button**
+  - **Back to top button**: allows the user to go back to the top of the page when scrolling down
 
-- **Product Detail Page**
+**Product Detail Page**
+  - Each product page provides some basic information about the product, as well as some care advice for this specific product:
+    - **Product Name and Price**
+    - **Product Category**
+    - **Other Names**
+    - **Care**
+  - **Quantity button and add to bag**: allow the user to adjust the amount they want of this product and add it to their shopping bag
+  - **Wishlist button**: allows the user to save a product in their wishlist in case the want to buy it later
+  - If the user is a superuser, they'll see an **Update button** and a **Delete button**
 
-- **Bag Page**
+**Bag Page**
+  - For each product, the shopping bag will show the following information:
+    - **Product Image**
+    - **Product Name and Price**
+    - **SKU Number**
+    - **Quantity Selected**
+  - Beside this information, the user can adjust the **quantity** and also **delete** the product and see each products' **subtotal** 
+  - - **Total**: allows the user to see the **Order Total**, the **Delivery Fee** and the **Grand Total**
+  - **Secure Checkout button**: allows the user to go to the **secure checkout page** to proceed with the payment. Alternatively the user can click on the **Keep Shopping** button
 
-- **Checkout Page**
+**Checkout Page**
+  - **Order Summary**: for each product it includes the product image, name, quantity and subtotal
+  - **Total**: allows the user to see the **Order Total**, the **Delivery Fee** and the **Grand Total**
+  - **Details**: allows the user to fill in the form with their name and email
+  - **Delivery**: allows the user to fill in the form with their phone number, address, town, county, postal code and country. The user can save this information to their profile
+  - **Payment**: allows the user to fill in the form with their credit card details
+  - **Complete Order button**: allows the user to confirm the details and complete their order. Alternatively the user can click on the **Adjust Bag** button and go back to the bag page
 
-- **Checkout Success Page**
+**Checkout Success Page**
+  - **Order Information**: this includes the order number, order date, order details, delivering details and billing info
+  - **Visit blog button**: allows the user to visit the blog and learn more about plants
 
-- **Profile Page**
+**Profile Page**
+  - **Default Delivery Information**: allows the user to save their delivery address so they don't have to type it in every time they purchase any products
+  - **Order History**: allows the user to keep track of their past orders
+  - **Wishlist button**: gives the user a shortcut to their Wishlist page without having to use the navigation bar. Alternatively the user can click on the **Keep Shopping** button and go to the Product page
 
-- **Wishlist Page**
+**Wishlist Page**
+- For each product, the shopping bag will show the following information:
+    - **Product Image**
+    - **Product Name and Price**
+    - **Delete from Wishlist button**: allows the user to remove the product from the user's wishlist
+    - **Add to bag button**: redirects the user to the product's page
 
-- **Blog Page**
+**Blog Page**
+  - **Blog Post**: each product has an image and title. If the user is a superuser, they can update or delete the blog post directly in this page
+  - **Back to top button**: allows the user to go back to the top of the page when scrolling down
 
-- **Blog Post Page**
+**Blog Post Page**
+  - **Title**
+  - **Author and Date**
+  - **Image**
+  - **Text**
+  - If the user is a superuser, they'll see an **Update button** and a **Delete button**
 
-- **Register Page**
+**Register Page**
+  - **Register form**: allows the user to register a new account by filling in the email, username and password
 
-- **Log In Page**
+**Login Page**
+- **Login form**: allows the user to login to their account
 
-- **Log Out Page**
+**Logout Page**
+- **Logout Confirmation button**: allows the user to logout from their account
 
+##### Restricted to Superusers
 
-Restricted to Superusers
+**Add Product Page**
+  - **Add Product form**: allows the superuser to add a new product to the shop
 
-- **Add Product Page**
+**Edit Product Page**
+  - **Edit Product form**: allows the superuser to update a product in the shop
 
-- **Edit Product Page**
+**Add Blog Post Page**
+  - **Add Blog Post form**: allows the superuser to add a new post to the blog
 
-- **Add Blog Post Page**
-
-- **Edit Blog Post Page**
-
-
-
+**Edit Blog Post Page**
+  - **Edit Blog Post form**: allows the superuser to update a post in the blog
  
 <span id="2-FEAT-2"></span>
-### 2.2 Potential Features
+### 2.2 Features left to implement in the future 
 
+- Add pagination to products page
+- Update the blog content to be more readable 
+- Add to each product in the products page a button to *add to bag* and *add to wishlist* buttons so they can add products to the bag or wishlist quicker
 
 ---
 
